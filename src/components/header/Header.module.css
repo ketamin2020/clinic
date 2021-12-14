@@ -1,0 +1,131 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid gray;
+}
+
+.mainTitle {
+  margin-left: 10px;
+  font-family: var(--primefontfamily);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--blackColor);
+}
+.mainTitle span {
+  display: block;
+  color: var(--blueColor);
+  font-weight: 800;
+  font-size: 24px;
+  margin-top: 6px;
+}
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+.logoLink::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+  background-image: url("../../images/logo-mob.png");
+  background-size: cover;
+  vertical-align: middle;
+}
+.contactsWrapper,
+.times {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.phones {
+  margin-bottom: 6px;
+}
+
+.logoWrapper {
+  width: 100%;
+  max-width: 80px;
+}
+.mobHidden {
+  display: none;
+}
+.phone {
+  font-family: var(--primefontfamily);
+  font-weight: 600;
+  color: var(--blackColor);
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.phone:hover {
+  color: var(--blueColor);
+  transition: all 0.2s;
+}
+.workTime {
+  font-size: 14px;
+  color: var(--blueColor);
+  font-weight: 600;
+}
+
+.callbackBtn {
+  display: block;
+  border: none;
+  outline: none;
+  height: auto;
+  min-width: auto;
+  background-color: transparent;
+  color: var(--redColor);
+  cursor: pointer;
+  border-bottom: 1px dashed var(--redColor);
+  transition: all 0.2s;
+}
+.callbackBtn:hover {
+  color: var(--blueColor);
+  transition: all 0.2s;
+  border-bottom: 1px solid var(--blueColor);
+}
+.serviceBtn {
+  margin: 0 20px 6px 0;
+}
+
+@media screen and (min-width: 780px) {
+  .mobHidden {
+    display: block;
+  }
+  .desktopHidden {
+    display: none;
+  }
+  .logoWrapper {
+    max-width: 240px;
+  }
+
+  .servicesWrapper,
+  .phones,
+  .times {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .phone {
+    margin-right: 10px;
+    padding: 5px;
+  }
+  .workTime,
+  .callbackBtn,
+  .phone {
+    font-size: 16px;
+  }
+  .phone::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    background-image: url("../../images/icons/phone.svg");
+    vertical-align: middle;
+  }
+}

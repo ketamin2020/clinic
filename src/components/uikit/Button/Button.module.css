@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  min-height: auto;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 25px;
+  font-family: var(--primefontfamily);
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button img {
+  width: 20px;
+  margin-right: 6px;
+}
+.red {
+  background-color: var(--redColor);
+}
+.blue {
+  background-color: var(--blueColor);
+}
+
+.green {
+  background-color: var(--greenColor);
+}
