@@ -28,3 +28,8 @@
 .green {
   background-color: var(--greenColor);
 }
+
+.rect {
+  width: 100%;
+  border-radius: 0;
+}

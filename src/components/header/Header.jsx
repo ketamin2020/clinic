@@ -3,14 +3,17 @@ import { NavLink } from "react-router-dom";
 import classnames from "classnames";
 import Button from "./../uikit/Button/Button";
 import Burger from "../uikit/BurgerIcon/Burger";
+import { useToggle } from "../../hooks/UseToggle";
 import home from "../../images/icons/home.svg";
 import document from "../../images/icons/document.svg";
+import user from "../../images/icons/user.svg";
 import style from "./Header.module.css";
 
 const Header = () => {
+  const [isOpenMenu, setIsOpenMenu] = useToggle();
   return (
-    <header>
-      <div className={style.container}>
+    <>
+      <header className={style.header}>
         <div className={style.logoWrapper}>
           <NavLink className={style.logoLink} to="/">
             <h1 className={classnames(style.mainTitle, style.mobHidden)}>
@@ -35,25 +38,104 @@ const Header = () => {
             <button className={style.callbackBtn}>Вам передзвонити?</button>
           </div>
         </div>
-        <div className={classnames(style.servicesWrapper, style.mobHidden)}>
-          <Button
-            styleName={style.serviceBtn}
-            text="Виклик лікаря"
-            bgColor="blue"
-            icons={home}
-          />
-          <Button
-            styleName={style.serviceBtn}
-            text="Записатися на прийом"
-            bgColor="red"
-            icons={document}
-          />
+        <div className={style.mobHidden}>
+          <ul className={style.servicesList}>
+            <li className={style.servicesItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Виклик лікаря"
+                bgColor="blue"
+                icons={home}
+              />
+            </li>
+            <li className={style.servicesItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Особистий кабінет"
+                bgColor="green"
+                icons={user}
+              />
+            </li>
+            <li className={style.servicesItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Записатися на прийом"
+                bgColor="red"
+                icons={document}
+              />
+            </li>
+          </ul>
         </div>
         <div className={style.desktopHidden}>
-          <Burger />
+          <Burger heandler={setIsOpenMenu} isOpen={isOpenMenu} />
         </div>
-      </div>
-    </header>
+      </header>
+      <nav className={style.nav}>
+        <div
+          className={classnames(
+            style.navWrapper,
+            isOpenMenu && style.menuActive
+          )}
+        >
+          <ul className={style.menuList}>
+            <li className={style.menuItem}>
+              <NavLink to="/about" className={style.menuItemLink}>
+                Про нас
+              </NavLink>
+            </li>
+            <li className={style.menuItem}>
+              <NavLink to="/directions" className={style.menuItemLink}>
+                Напрями
+              </NavLink>
+            </li>
+            <li className={style.menuItem}>
+              <NavLink to="/doctors" className={style.menuItemLink}>
+                Наші лікарі
+              </NavLink>
+            </li>
+            <li className={style.menuItem}>
+              <NavLink to="/price" className={style.menuItemLink}>
+                Вартість
+              </NavLink>
+            </li>
+            <li className={style.menuItem}>
+              <NavLink to="/contacts" className={style.menuItemLink}>
+                Контакти
+              </NavLink>
+            </li>
+          </ul>
+          <ul className={classnames(style.menuButtonList, style.desktopHidden)}>
+            <li className={style.menuButtonItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Виклик лікаря"
+                bgColor="blue"
+                icons={home}
+                type="rect"
+              />
+            </li>
+            <li className={style.menuButtonItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Особистий кабінет"
+                bgColor="green"
+                icons={user}
+                type="rect"
+              />
+            </li>
+            <li className={style.menuButtonItem}>
+              <Button
+                styleName={style.serviceBtn}
+                text="Записатися на прийом"
+                bgColor="red"
+                icons={document}
+                type="rect"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </>
   );
 };
 
