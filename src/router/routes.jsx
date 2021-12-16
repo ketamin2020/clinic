@@ -1,6 +1,11 @@
-const routes =[
-    {path: '/', name: 'home',element:<h1>hello</h1>},
-    {path: '/get', name: 'get',element:<h1>get</h1>},
+import { lazy } from "react";
+
+const routes = [
+  {
+    path: "/",
+    name: "home",
+    element: lazy(() => import("../pages/mainPage/MainPage")),
+  },
 ];
 
 export default routes;

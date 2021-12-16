@@ -1,10 +1,20 @@
-import React,{createContext} from 'react'
-import data from './data'
-const CustomContext = createContext(null)
-const Context = ({children}) => {
-    return (
-        <CustomContext.Provider value={data} >{children}</CustomContext.Provider>
-    )
-}
+import React, { createContext } from "react";
+import { useToggle } from "../hooks/UseToggle";
+import data from "./data";
+const CustomContext = createContext(null);
+const Context = ({ children }) => {
+  const [isOpenMenu, setIsOpenMenu] = useToggle();
+  const contextData = {
+    data,
+    isOpenMenu,
+    setIsOpenMenu,
+  };
 
-export {CustomContext,Context};
+  return (
+    <CustomContext.Provider value={contextData}>
+      {children}
+    </CustomContext.Provider>
+  );
+};
+
+export { CustomContext, Context };
