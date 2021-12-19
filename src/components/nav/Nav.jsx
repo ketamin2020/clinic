@@ -11,9 +11,12 @@ import style from "./Nav.module.css";
 const Nav = () => {
   const { isOpenMenu, data } = useContext(CustomContext);
   return (
-    <nav className={classnames(style.nav, isOpenMenu && style.menuActive)}>
+    <nav className={classnames(style.nav, isOpenMenu && style.navActive)}>
       <div
-        className={classnames(style.navWrapper, isOpenMenu && style.menuActive)}
+        className={classnames(
+          style.navWrapper,
+          isOpenMenu && style.navWrapperActive
+        )}
       >
         <ul className={style.menuList}>
           {data.navLinks.map(({ path, text }) => (

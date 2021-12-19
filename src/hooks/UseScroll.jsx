@@ -4,7 +4,7 @@ export function useScroll() {
   const [scrollY, setScrollY] = useState(0);
 
   const listener = (e) => {
-    setScrollY(window.scrollY);
+    setScrollY(window.scrollY > 200 ? true : false);
   };
   useEffect(() => {
     window.addEventListener("scroll", listener);

@@ -19,10 +19,10 @@ const Services = () => {
             <img className={style.itemBgImg} src={treatChild} alt="" />
           </div>
           <div className={style.itemContent}>
-            <p className={style.itemContentText}>Лікування дітей</p>
+            <p className={style.itemContentText}>Лікування дітей та дорослих</p>
             <div className={style.itemContentTextHidden}>
               <p className={style.contentHeading}>
-                Лікування дітей від 0 до 18 років по усім напрямкам
+                Лікування дітей від 0 до 18 років та дорослих по усім напрямкам
               </p>
               <LinkButton path="" text="Детальніше..." />
             </div>
@@ -33,10 +33,10 @@ const Services = () => {
             <img className={style.itemBgImg} src={treatAdult} alt="" />
           </div>
           <div className={style.itemContent}>
-            <p className={style.itemContentText}>Лікування дорослих</p>
+            <p className={style.itemContentText}>Направлення</p>
             <div className={style.itemContentTextHidden}>
               <p className={style.contentHeading}>
-                Здійснюємо лікування дорослих за всіма основними напрямками
+                Направлення до вузького спеціаліста
               </p>
               <LinkButton path="" text="Детальніше..." />
             </div>
@@ -47,7 +47,7 @@ const Services = () => {
             <img className={style.itemBgImg} src={declaration} alt="" />
           </div>
           <div className={style.itemContent}>
-            <p className={style.itemContentText}>Декларації</p>
+            <p className={style.itemContentText}>Підписання декларації</p>
             <div className={style.itemContentTextHidden}>
               <p className={style.contentHeading}>
                 В нашій клініці ви можете укласти деклараціїї з лікарями

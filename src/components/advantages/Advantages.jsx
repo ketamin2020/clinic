@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "../../common/Slider/Slider";
+import SectionTitle from "../uikit/SectionTitle/SectionTItle";
 import style from "./Advantages.module.css";
 import equipmentImg from "../../images/slider/equioment.jpeg";
 import individualImg from "../../images/slider/individual.jpeg";
@@ -10,6 +11,7 @@ import consiliumImg from "../../images/slider/consilium.jpeg";
 const Advantages = () => {
   return (
     <section className={style.section}>
+      <SectionTitle text="Про нас" />
       <Slider>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
