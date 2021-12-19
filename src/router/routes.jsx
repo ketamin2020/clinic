@@ -4,6 +4,7 @@ const routes = [
   {
     path: "/",
     name: "home",
+    breadcrumb: "Головна",
     element: lazy(() => import("../pages/mainPage/MainPage")),
   },
 ];

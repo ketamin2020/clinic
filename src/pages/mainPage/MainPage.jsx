@@ -1,10 +1,11 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout";
+import Advantages from "../../components/advantages/Advantages";
 
 const MainPage = () => {
   return (
     <MainLayout>
-      <h1>hello from main</h1>
+      <Advantages />
     </MainLayout>
   );
 };

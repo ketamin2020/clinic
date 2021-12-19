@@ -15,11 +15,7 @@ const Header = () => {
     <>
       <header className={style.header}>
         <div className={style.logoWrapper}>
-          <NavLink className={style.logoLink} to="/">
-            <h1 className={classnames(style.mainTitle, style.mobHidden)}>
-              Центр сімейної медицини <span>&laquo;Сім'я&raquo;</span>
-            </h1>
-          </NavLink>
+          <NavLink className={style.logoLink} to="/"></NavLink>
         </div>
         <div className={style.contactsWrapper}>
           <div className={style.phones}>

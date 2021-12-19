@@ -1,0 +1,69 @@
+.sliderDots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sliderDots li {
+  padding: 12px;
+}
+
+.sliderDots li button {
+  background-color: var(--blueColor);
+  outline: none;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+@media screen and (min-width: 780px) {
+  .sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+  .changeItems {
+    margin: 0;
+  }
+  .prevArrow,
+  .nextArrow {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999999999999;
+  }
+  .prevArrow {
+    left: 2%;
+  }
+  .nextArrow {
+    right: 2%;
+  }
+  .prevArrow::before,
+  .nextArrow::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid var(--blueColor);
+    border-right: 2px solid var(--blueColor);
+    top: 37%;
+  }
+
+  .prevArrow::before {
+    transform: rotate(135deg);
+    left: 40%;
+  }
+  .nextArrow::before {
+    transform: rotate(-45deg);
+    right: 40%;
+  }
+  .sliderDots {
+    display: none;
+  }
+}

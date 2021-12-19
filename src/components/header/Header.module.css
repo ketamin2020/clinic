@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff;
+  transition: all 0.2s;
 }
 
 .mainTitle {
@@ -29,7 +31,7 @@
   width: 100%;
   max-width: 80px;
   height: 80px;
-  background-image: url("../../images/logo-mob.png");
+  background-image: url("../../images/logo.png");
   background-size: cover;
   vertical-align: middle;
 }
@@ -136,5 +138,10 @@
     margin-right: 6px;
     background-image: url("../../images/icons/phone.svg");
     vertical-align: middle;
+  }
+  .logoLink::before {
+    background-image: url("../../images/logo-desktop.png");
+    width: 100%;
+    max-width: 100%;
   }
 }
