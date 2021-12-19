@@ -1,4 +1,5 @@
 import React from "react";
+import classnames from "classnames";
 import style from "./MainLayout.module.css";
 import Header from "../components/header/Header";
 import Nav from "../components/nav/Nav";
@@ -7,7 +8,7 @@ import useScroll from "../hooks/UseScroll";
 
 const MainLayout = ({ children }) => {
   const [scrollY] = useScroll();
-  console.log(scrollY);
+
   return (
     <>
       <div className={style.headerContainer}>
@@ -25,7 +26,9 @@ const MainLayout = ({ children }) => {
           <Breadcrumbs />
         </div>
       </div>
-      <div className={style.mainContainer}>{children}</div>
+      <div className={style.mainContainer}>
+        <div className={style.containerInner}>{children}</div>
+      </div>
     </>
   );
 };

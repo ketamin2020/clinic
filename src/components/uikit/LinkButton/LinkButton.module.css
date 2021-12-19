@@ -1,0 +1,23 @@
+.linkBtn {
+  font-family: var(--primefontfamily);
+  color: var(--whiteColor);
+  font-size: 14px;
+  transition: all 0.3s;
+  padding-bottom: 4px;
+}
+.linkBtn:hover {
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  border-bottom: 1px dashed var(--whiteColor);
+}
+
+.linkBtn::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-image: url("../../../images/icons/angle-right-solid.svg");
+  background-position: center;
+  background-size: cover;
+  margin-left: 10px;
+}
