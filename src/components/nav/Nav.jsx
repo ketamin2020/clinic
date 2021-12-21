@@ -10,6 +10,7 @@ import style from "./Nav.module.css";
 
 const Nav = () => {
   const { isOpenMenu, data } = useContext(CustomContext);
+
   return (
     <nav className={classnames(style.nav, isOpenMenu && style.navActive)}>
       <div

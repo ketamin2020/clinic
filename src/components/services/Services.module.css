@@ -10,6 +10,8 @@
   margin: 0 auto 20px;
   box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
   cursor: pointer;
+  transform: scale(1);
+  transform: all 0.2s;
 }
 
 .cardItem:last-child {
@@ -20,6 +22,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transform: all 0.2s;
 }
 .itemContent {
   position: absolute;
@@ -28,7 +31,6 @@
   padding: 10px;
   height: 42px;
   background-color: var(--cardsBgColor);
-  transition: all 0.3s;
 }
 .itemContentText {
   font-family: var(--primefontfamily);
@@ -50,6 +52,7 @@
   transition: all 0.3s;
   padding-top: 30px;
 }
+
 .contentHeading {
   font-family: var(--primefontfamily);
   font-size: 16px;

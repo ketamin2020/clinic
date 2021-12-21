@@ -7,6 +7,12 @@ const routes = [
     breadcrumb: "Головна",
     element: lazy(() => import("../pages/mainPage/MainPage")),
   },
+  {
+    path: "/qwerty",
+    name: "home",
+    breadcrumb: " / ціни",
+    element: lazy(() => import("../pages/mainPage/MainPage")),
+  },
 ];
 
 export default routes;
