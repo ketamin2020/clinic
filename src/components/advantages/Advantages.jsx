@@ -11,7 +11,7 @@ import consiliumImg from "../../images/slider/consilium.jpeg";
 const Advantages = () => {
   return (
     <section className={style.section}>
-      <SectionTitle text="Про нас" />
+      <SectionTitle text="Чому обирають нас" />
       <Slider>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>

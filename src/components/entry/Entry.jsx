@@ -135,7 +135,7 @@ const Entry = () => {
                   ></path>
                 </svg>
               </div>
-              <p>Велику увагу приділяє стандартам якості обслуговування</p>
+              <p>Велику увагу приділяємо стандартам якості обслуговування</p>
             </li>
             <li className={style.item}>
               <div className={style.itemImage}>

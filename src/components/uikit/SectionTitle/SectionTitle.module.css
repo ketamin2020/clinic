@@ -1,13 +1,26 @@
 .titleWrapper {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .title {
+  width: 100%;
   font-family: var(--primefontfamily);
   text-align: center;
   font-weight: bold;
   font-size: 28px;
   color: var(--blueColor);
+  text-align: center;
+}
+
+.title::before,
+.title:after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 4px;
+  vertical-align: middle;
+  background-color: var(--blueColor);
+  margin: 0 10px;
 }
 
 @media screen and (min-width: 780px) {
@@ -16,7 +29,6 @@
   }
   .title {
     font-size: 48px;
-    text-align: left;
     letter-spacing: 3px;
   }
 }
