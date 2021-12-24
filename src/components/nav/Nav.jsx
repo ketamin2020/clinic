@@ -5,12 +5,11 @@ import classnames from "classnames";
 import Button from "./../uikit/Button/Button";
 import home from "../../images/icons/home.svg";
 import document from "../../images/icons/document.svg";
-import user from "../../images/icons/user.svg";
 import style from "./Nav.module.css";
 
 const Nav = () => {
-  const { isOpenMenu, data } = useContext(CustomContext);
-
+  const { isOpenMenu, onOpenHeandler, onOpenMakerHeandler, data } =
+    useContext(CustomContext);
   return (
     <nav className={classnames(style.nav, isOpenMenu && style.navActive)}>
       <div
@@ -36,17 +35,10 @@ const Nav = () => {
               bgColor="blue"
               icons={home}
               type="rect"
+              heandler={onOpenHeandler}
             />
           </li>
-          <li className={style.menuButtonItem}>
-            <Button
-              styleName={style.serviceBtn}
-              text="Особистий кабінет"
-              bgColor="green"
-              icons={user}
-              type="rect"
-            />
-          </li>
+
           <li className={style.menuButtonItem}>
             <Button
               styleName={style.serviceBtn}
@@ -54,6 +46,7 @@ const Nav = () => {
               bgColor="red"
               icons={document}
               type="rect"
+              heandler={onOpenMakerHeandler}
             />
           </li>
         </ul>

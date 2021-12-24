@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CustomContext } from "../../context/Context";
 import { NavLink } from "react-router-dom";
 import classnames from "classnames";
 import Button from "../../components/uikit/Button/Button";
@@ -10,6 +11,7 @@ import facebook from "../../images/icons/facebook.svg";
 import instagram from "../../images/icons/instagram.svg";
 
 const Footer = () => {
+  const { onOpenHeandler, onOpenMakerHeandler } = useContext(CustomContext);
   return (
     <>
       <footer className={style.footer}>
@@ -54,6 +56,7 @@ const Footer = () => {
                 text="Виклик лікаря"
                 bgColor="blue"
                 icons={home}
+                heandler={onOpenHeandler}
               />
             </li>
 
@@ -61,8 +64,9 @@ const Footer = () => {
               <Button
                 styleName={style.serviceBtn}
                 text="Записатися на прийом"
-                bgColor="red"
+                bgColor="green"
                 icons={document}
+                heandler={onOpenMakerHeandler}
               />
             </li>
           </ul>

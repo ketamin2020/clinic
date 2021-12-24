@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CustomContext } from "../../context/Context";
 import SectionTitle from "../../components/uikit/SectionTitle/SectionTItle";
 import Button from "../../components/uikit/Button/Button";
 import style from "./Total.module.css";
@@ -6,6 +7,7 @@ import family from "../../images/family.png";
 import document from "../../images/icons/document.svg";
 
 const Total = () => {
+  const { onOpenMakerHeandler } = useContext(CustomContext);
   return (
     <section className={style.section}>
       <SectionTitle text="Ви хочете?" />
@@ -30,6 +32,7 @@ const Total = () => {
             text="Записатися на прийом"
             bgColor="blue"
             icons={document}
+            heandler={onOpenMakerHeandler}
           />
         </div>
         <div className={style.imageWrapper}>

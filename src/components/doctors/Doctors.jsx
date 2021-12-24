@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { CustomContext } from "../../context/Context";
 import Button from "../uikit/Button/Button";
 import DocSlider from "../../common/DoctorsSliders/DocSlider";
 import SectionTitle from "../uikit/SectionTitle/SectionTItle";
@@ -8,6 +9,7 @@ import style from "./Doctors.module.css";
 import document from "../../images/icons/document.svg";
 
 const Doctors = () => {
+  const { onOpenMakerHeandler } = useContext(CustomContext);
   return (
     <section className={style.section}>
       <SectionTitle text="Наші лікарі" />
@@ -27,6 +29,7 @@ const Doctors = () => {
                 bgColor="blue"
                 icons={document}
                 type="ovale"
+                heandler={onOpenMakerHeandler}
               />
             </div>
           </div>
@@ -46,6 +49,7 @@ const Doctors = () => {
                 bgColor="blue"
                 icons={document}
                 type="ovale"
+                heandler={onOpenMakerHeandler}
               />
             </div>
           </div>
@@ -64,6 +68,7 @@ const Doctors = () => {
                 bgColor="blue"
                 icons={document}
                 type="ovale"
+                heandler={onOpenMakerHeandler}
               />
             </div>
           </div>
@@ -82,6 +87,7 @@ const Doctors = () => {
                 bgColor="blue"
                 icons={document}
                 type="ovale"
+                heandler={onOpenMakerHeandler}
               />
             </div>
           </div>

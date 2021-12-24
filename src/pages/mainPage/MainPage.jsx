@@ -5,6 +5,7 @@ import Advantages from "../../components/advantages/Advantages";
 import Services from "../../components/services/Services";
 import Doctors from "../../components/doctors/Doctors";
 import Total from "../../components/total/Total";
+import Map from "../../components/maps/Map";
 
 const MainPage = () => {
   return (
@@ -14,6 +15,7 @@ const MainPage = () => {
       <Doctors />
       <Total />
       <Advantages />
+      <Map />
     </MainLayout>
   );
 };

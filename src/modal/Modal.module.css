@@ -1,0 +1,59 @@
+.modalBackdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999999999999999999;
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(3px);
+  animation: anime 0.5s;
+}
+
+@keyframes anime {
+  0% {
+    backdrop-filter: blur(0);
+  }
+  100% {
+    backdrop-filter: blur(3px);
+  }
+}
+
+.modalBase {
+  position: absolute;
+  width: 100%;
+  max-width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  transition: all 0.3s;
+  padding: 20px;
+  animation: fade 0.5s;
+}
+
+@keyframes fade {
+  0% {
+    left: -200%;
+  }
+
+  100% {
+    left: 50%;
+  }
+}
+
+.closeBtn {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/icons/close.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}

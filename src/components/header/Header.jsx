@@ -6,11 +6,17 @@ import Button from "./../uikit/Button/Button";
 import Burger from "../uikit/BurgerIcon/Burger";
 import home from "../../images/icons/home.svg";
 import document from "../../images/icons/document.svg";
-import user from "../../images/icons/user.svg";
 import style from "./Header.module.css";
 
 const Header = () => {
-  const { isOpenMenu, setIsOpenMenu } = useContext(CustomContext);
+  const {
+    isOpenMenu,
+    setIsOpenMenu,
+    onOpenHeandler,
+    onOpenMakerHeandler,
+    onOpenCallBackHeandler,
+  } = useContext(CustomContext);
+
   return (
     <>
       <header className={style.header}>
@@ -31,7 +37,12 @@ const Header = () => {
           </div>
           <div className={style.times}>
             <span className={style.workTime}>Працюємо 24/7</span>
-            <button className={style.callbackBtn}>Вам передзвонити?</button>
+            <button
+              onClick={onOpenCallBackHeandler}
+              className={style.callbackBtn}
+            >
+              Вам передзвонити?
+            </button>
           </div>
         </div>
         <div className={style.mobHidden}>
@@ -42,22 +53,17 @@ const Header = () => {
                 text="Виклик лікаря"
                 bgColor="blue"
                 icons={home}
+                heandler={onOpenHeandler}
               />
             </li>
-            <li className={style.servicesItem}>
-              <Button
-                styleName={style.serviceBtn}
-                text="Особистий кабінет"
-                bgColor="green"
-                icons={user}
-              />
-            </li>
+
             <li className={style.servicesItem}>
               <Button
                 styleName={style.serviceBtn}
                 text="Записатися на прийом"
-                bgColor="red"
+                bgColor="green"
                 icons={document}
+                heandler={onOpenMakerHeandler}
               />
             </li>
           </ul>
