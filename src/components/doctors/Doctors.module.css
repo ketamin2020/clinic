@@ -54,7 +54,6 @@
 .viewAllBtn {
   display: block;
   width: 100%;
-  max-width: 250px;
   margin: 0 auto;
   font-family: var(--primefontfamily);
   font-size: 20px;
