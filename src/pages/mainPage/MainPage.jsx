@@ -10,11 +10,11 @@ import Map from "../../components/maps/Map";
 const MainPage = () => {
   return (
     <MainLayout>
+      <Total />
+      <Advantages />
       <Entry />
       <Services />
       <Doctors />
-      <Total />
-      <Advantages />
       <Map />
     </MainLayout>
   );

@@ -8,10 +8,16 @@ const routes = [
     element: lazy(() => import("../pages/mainPage/MainPage")),
   },
   {
-    path: "/qwerty",
-    name: "home",
-    breadcrumb: " / ціни",
-    element: lazy(() => import("../pages/mainPage/MainPage")),
+    path: "/contacts",
+    name: "contacts",
+    breadcrumb: "контакти",
+    element: lazy(() => import("../pages/contactsPage/ContactsPage")),
+  },
+  {
+    path: "/price",
+    name: "price",
+    breadcrumb: "вартість",
+    element: lazy(() => import("../pages/costPage/CostPage")),
   },
 ];
 

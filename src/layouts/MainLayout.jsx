@@ -4,11 +4,20 @@ import Header from "../components/header/Header";
 import Nav from "../components/nav/Nav";
 import Breadcrumbs from "../common/Breadcrumbs/Breadcrumbs";
 import Footer from "../components/footer/Footer";
+import { useScroll } from "../hooks/UseScroll";
+import classNames from "classnames";
 
 const MainLayout = ({ children }) => {
+  const { scrollY } = useScroll();
+
   return (
-    <>
-      <div className={style.headerContainer}>
+    <div className={style.container}>
+      <div
+        className={classNames(
+          style.headerContainer,
+          scrollY && style.headerActive
+        )}
+      >
         <div className={style.containerInner}>
           <Header />
         </div>
@@ -23,14 +32,13 @@ const MainLayout = ({ children }) => {
           </div>
         </div>
       </div>
-
       <div className={style.mainContainer}>
         <div className={style.containerInner}>{children}</div>
       </div>
       <div className={style.footerContainer}>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

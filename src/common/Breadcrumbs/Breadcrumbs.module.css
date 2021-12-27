@@ -1,4 +1,12 @@
 .breadcrumsLink {
   font-family: var(--primefontfamily);
-  color: var(--blueColor);
+  color: gray;
+}
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 3px;
+}
+.arrov_image {
+  width: 15px;
 }

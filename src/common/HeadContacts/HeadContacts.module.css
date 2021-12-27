@@ -1,0 +1,85 @@
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-family: var(--primefontfamily);
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+.contacts {
+  padding-top: 20px;
+}
+.location {
+  font-family: var(--primefontfamily);
+  font-size: 18px;
+  color: var(--blackColor);
+  letter-spacing: 1px;
+}
+.contacts a {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: var(--primefontfamily);
+  font-size: 18px;
+  color: var(--blackColor);
+}
+.contacts a:hover {
+  text-decoration: underline;
+  color: var(--blueColor);
+}
+.phone::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../images/icons/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.iconLocation::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../images/icons/points.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.email::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url("../../images/icons/mail.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+.socialLink {
+  display: block;
+  width: 40px;
+  margin: 10px;
+}
+
+@media screen and (min-width: 780px) {
+  .footerRight {
+    align-items: flex-start;
+  }
+  .contacts a {
+    text-align: left;
+  }
+}

@@ -1,0 +1,10 @@
+.section {
+  padding: 0 20px;
+}
+@media screen and (min-width: 780px) {
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  }
+}
