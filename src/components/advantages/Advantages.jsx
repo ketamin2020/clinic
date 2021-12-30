@@ -1,8 +1,6 @@
 import React from "react";
 import Slider from "../../common/Slider/Slider";
-import SectionTitle from "../uikit/SectionTitle/SectionTItle";
 import style from "./Advantages.module.css";
-import equipmentImg from "../../images/slider/equioment.jpeg";
 import individualImg from "../../images/slider/individual.jpeg";
 import standartImg from "../../images/slider/standart.jpeg";
 import trustImg from "../../images/slider/trustus.jpeg";
@@ -11,21 +9,7 @@ import consiliumImg from "../../images/slider/consilium.jpeg";
 const Advantages = () => {
   return (
     <section className={style.section}>
-      <SectionTitle text="Чому обирають нас" />
       <Slider>
-        <div className={style.advantageItem}>
-          <div className={style.itemImageLayout}></div>
-          <img className={style.itemImage} src={equipmentImg} alt="" />
-
-          <article className={style.itemContent}>
-            <h4 className={style.itemTitle}>Сучасне обладнання</h4>
-            <p className={style.itemText}>
-              В арсеналі – сучасне діагностичне та лікувальне обладнання.
-              Лабораторні дослідження проводяться з урахуванням своєї
-              діагностичної лабораторії.
-            </p>
-          </article>
-        </div>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
           <img className={style.itemImage} src={individualImg} alt="" />

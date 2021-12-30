@@ -14,17 +14,14 @@ const Total = () => {
       <div className={style.wrapper}>
         <div className={style.contentWrapper}>
           <ul className={style.list}>
-            <li className={style.item}>
-              Переконатись у професіоналізмі наших лікарів?
-            </li>
-            <li className={style.item}>Протестувати наш дружній сервіс?</li>
             <li className={style.item}>Заключити декларацію з лікарем?</li>
-            <li className={style.item}>Вакцинуватись?</li>
-            <li className={style.item}>
-              Хочете на власні очі побачити нашу клініку?
-            </li>
             <li className={style.item}>
               Отримати направлення до вузького спеціаліста?
+            </li>
+            <li className={style.item}>Вакцинуватись?</li>
+            <li className={style.item}>Здійснити забір аналізів?</li>
+            <li className={style.item}>
+              Хочете на власні очі побачити нашу клініку?
             </li>
           </ul>
           <Button

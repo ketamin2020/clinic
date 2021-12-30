@@ -19,6 +19,12 @@ const routes = [
     breadcrumb: "вартість",
     element: lazy(() => import("../pages/costPage/CostPage")),
   },
+  {
+    path: "/vaccines",
+    name: "vaccines",
+    breadcrumb: "вакцинація",
+    element: lazy(() => import("../pages/vaccinesPage/VaccinesPage")),
+  },
 ];
 
 export default routes;

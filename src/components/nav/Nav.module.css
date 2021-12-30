@@ -68,7 +68,7 @@
   display: block;
   font-family: var(--primefontfamily);
   color: var(--blackColor);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   padding: 7px;
@@ -112,9 +112,12 @@
   background-image: url("../../images/icons/doctors.svg");
 }
 .menuItem:nth-child(4) .menuItemLink::before {
-  background-image: url("../../images/icons/price.svg");
+  background-image: url("../../images/icons/vaccine.svg");
 }
 .menuItem:nth-child(5) .menuItemLink::before {
+  background-image: url("../../images/icons/price.svg");
+}
+.menuItem:nth-child(6) .menuItemLink::before {
   background-image: url("../../images/icons/contacts.svg");
 }
 

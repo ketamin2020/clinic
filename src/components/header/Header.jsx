@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { CustomContext } from "../../context/Context";
-import classnames from "classnames";
 import Button from "./../uikit/Button/Button";
 import Burger from "../uikit/BurgerIcon/Burger";
 import home from "../../images/icons/home.svg";
@@ -9,40 +8,27 @@ import document from "../../images/icons/document.svg";
 import style from "./Header.module.css";
 
 const Header = () => {
-  const {
-    isOpenMenu,
-    setIsOpenMenu,
-    onOpenHeandler,
-    onOpenMakerHeandler,
-    onOpenCallBackHeandler,
-  } = useContext(CustomContext);
+  const { isOpenMenu, setIsOpenMenu, onOpenHeandler, onOpenMakerHeandler } =
+    useContext(CustomContext);
 
   return (
     <>
       <header className={style.header}>
         <div className={style.logoWrapper}>
-          <NavLink className={style.logoLink} to="/"></NavLink>
+          <NavLink
+            onClick={isOpenMenu && setIsOpenMenu}
+            className={style.logoLink}
+            to="/"
+          ></NavLink>
         </div>
         <div className={style.contactsWrapper}>
           <div className={style.phones}>
             <a className={style.phone} href="tel:0688606061">
               (068) 860-60-61
             </a>
-            <a
-              className={classnames(style.phone, style.mobHidden)}
-              href="tel:0688606062"
-            >
+            <a className={style.phone} href="tel:0688606062">
               (068) 860-60-61
             </a>
-          </div>
-          <div className={style.times}>
-            <span className={style.workTime}>Працюємо 24/7</span>
-            <button
-              onClick={onOpenCallBackHeandler}
-              className={style.callbackBtn}
-            >
-              Вам передзвонити?
-            </button>
           </div>
         </div>
         <div className={style.mobHidden}>

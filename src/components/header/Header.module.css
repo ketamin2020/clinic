@@ -42,9 +42,6 @@
   align-items: center;
   justify-content: space-around;
 }
-.phones {
-  margin-bottom: 6px;
-}
 
 .logoWrapper {
   width: 100%;
@@ -59,6 +56,7 @@
   color: var(--blackColor);
   font-size: 14px;
   transition: all 0.2s;
+  margin-bottom: 8px;
 }
 
 .phone:hover {
@@ -101,6 +99,11 @@
 .servicesItem {
   padding: 5px;
 }
+.phones {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 @media screen and (min-width: 780px) {
   .mobHidden {
@@ -124,6 +127,12 @@
   .phone {
     margin-right: 10px;
     padding: 5px;
+    margin-bottom: 0;
+  }
+  .phones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .workTime,
   .callbackBtn,

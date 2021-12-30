@@ -1,0 +1,65 @@
+.vaccineList,
+.content {
+  width: 100%;
+}
+
+.content {
+  width: 40%;
+}
+
+.vaccineItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.title {
+  width: 100%;
+  font-family: var(--primefontfamily);
+  color: var(--greenColor);
+  letter-spacing: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  padding-left: 6px;
+}
+.itemTargetWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vaccineItem:nth-child(even) {
+  background-color: #bbe7f5;
+}
+.vaccineItem:nth-child(odd) {
+  background-color: #eaf4f7;
+}
+.itemTarget {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 20px;
+  border: 1px solid var(--blueColor);
+  font-family: var(--primefontfamily);
+  font-size: 12px;
+  transition: all 0.3s;
+  color: grey;
+}
+.itemTarget:hover {
+  color: white;
+  background-color: var(--blueColor);
+  transition: all 0.3s;
+}
+
+.vaccineLink {
+  display: block;
+  width: 100%;
+  max-width: 120px;
+  background-color: var(--blueColor);
+  height: 40px;
+  margin-left: auto;
+  padding: 12px;
+  border-radius: 20px;
+  font-family: var(--primefontfamily);
+  color: white;
+}

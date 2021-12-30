@@ -28,9 +28,16 @@
   width: 100%;
   font-family: var(--primefontfamily);
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   text-align: left;
+  letter-spacing: 1px;
+  transition: all 0.2s;
+}
+
+.accordion:hover .accordion__title {
+  letter-spacing: 2px;
+  transition: all 0.2s;
 }
 
 .accordion__icon {
@@ -43,9 +50,13 @@
 }
 
 .accordion__content {
+  font-family: var(--primefontfamily);
   overflow: hidden;
   transition: max-height 0.6s ease;
   margin: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(73, 71, 71);
 }
 
 .navLink {

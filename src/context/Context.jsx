@@ -7,6 +7,9 @@ const Context = ({ children }) => {
   const [isOpenModal, setIsOpenModal] = useToggle();
   const [isOpenMaker, setIsOpenMaker] = useToggle();
   const [isCallBack, setIsCallBack] = useToggle();
+  const onMenuHeandler = () => {
+    setIsOpenMenu((prev) => !prev);
+  };
   const onOpenHeandler = () => {
     setIsOpenModal((prev) => !prev);
   };
@@ -27,6 +30,7 @@ const Context = ({ children }) => {
     onOpenHeandler,
     onOpenMakerHeandler,
     onOpenCallBackHeandler,
+    onMenuHeandler,
   };
 
   return (

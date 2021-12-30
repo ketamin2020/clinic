@@ -1,8 +1,9 @@
 const data = {
   navLinks: [
-    { path: "/about", text: "Про нас" },
+    { path: "/", text: "Головна" },
     { path: "/directions", text: "Напрями" },
     { path: "/doctors", text: "Наші лікарі" },
+    { path: "/vaccines", text: "Вакцинація" },
     { path: "/price", text: "Вартість" },
     { path: "/contacts", text: "Контакти" },
   ],

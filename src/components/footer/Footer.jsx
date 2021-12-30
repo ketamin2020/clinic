@@ -5,11 +5,10 @@ import Button from "../../components/uikit/Button/Button";
 import style from "../footer/Footer.module.css";
 import footerLogo from "../../images/logo-desktop.png";
 import document from "../../images/icons/document.svg";
-import home from "../../images/icons/home.svg";
 import HeadContacts from "../../common/HeadContacts/HeadContacts";
 
 const Footer = () => {
-  const { onOpenHeandler, onOpenMakerHeandler } = useContext(CustomContext);
+  const { onOpenMakerHeandler } = useContext(CustomContext);
   return (
     <>
       <footer className={style.footer}>
@@ -51,19 +50,10 @@ const Footer = () => {
             <li className={style.footerMiddleItem}>
               <Button
                 styleName={style.serviceBtn}
-                text="Виклик лікаря"
-                bgColor="blue"
-                icons={home}
-                heandler={onOpenHeandler}
-              />
-            </li>
-
-            <li className={style.footerMiddleItem}>
-              <Button
-                styleName={style.serviceBtn}
                 text="Записатися на прийом"
                 bgColor="green"
                 icons={document}
+                type="ovale"
                 heandler={onOpenMakerHeandler}
               />
             </li>
