@@ -7,13 +7,8 @@ import document from "../../images/icons/document.svg";
 import style from "./Nav.module.css";
 
 const Nav = () => {
-  const {
-    isOpenMenu,
-    onMenuHeandler,
-
-    onOpenMakerHeandler,
-    data,
-  } = useContext(CustomContext);
+  const { isOpenMenu, onMenuHeandler, onOpenMakerHeandler, data } =
+    useContext(CustomContext);
 
   return (
     <nav className={classnames(style.nav, isOpenMenu && style.navActive)}>

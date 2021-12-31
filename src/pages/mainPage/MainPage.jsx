@@ -11,8 +11,8 @@ const MainPage = () => {
   return (
     <MainLayout>
       <Total />
-      <Entry />
       <Services />
+      <Entry />
       <Advantages />
       <Doctors />
       <Map />

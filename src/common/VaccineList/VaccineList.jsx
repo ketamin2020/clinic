@@ -17,11 +17,6 @@ const VaccineList = ({ listItems }) => {
               ))}
             </div>
           </div>
-          <div className={style.content}>
-            <NavLink className={style.vaccineLink} to={path}>
-              Про вакцину
-            </NavLink>
-          </div>
         </li>
       ))}
     </ul>

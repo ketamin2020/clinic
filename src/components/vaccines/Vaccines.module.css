@@ -1,6 +1,9 @@
 .article {
   padding: 10px 20px;
 }
+.article:last-child {
+  padding: 0;
+}
 .text {
   width: 100%;
   font-family: var(--primefontfamily);

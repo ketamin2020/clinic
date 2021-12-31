@@ -25,6 +25,12 @@ const routes = [
     breadcrumb: "вакцинація",
     element: lazy(() => import("../pages/vaccinesPage/VaccinesPage")),
   },
+  {
+    path: "/directions",
+    name: "directions",
+    breadcrumb: "напрями",
+    element: lazy(() => import("../pages/directlyPage/DirectlyPage")),
+  },
 ];
 
 export default routes;
