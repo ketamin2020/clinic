@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "../../common/Slider/Slider";
 import style from "./Advantages.module.css";
-import individualImg from "../../images/slider/individual.jpeg";
-import standartImg from "../../images/slider/standart.jpeg";
-import trustImg from "../../images/slider/trustus.jpeg";
-import consiliumImg from "../../images/slider/consilium.jpeg";
+import individualImg from "../../images/slider/individual.webp";
+import standartImg from "../../images/slider/standart.webp";
+import trustImg from "../../images/slider/trustus.webp";
+import consiliumImg from "../../images/slider/consilium.webp";
 
 const Advantages = () => {
   return (
@@ -12,10 +12,16 @@ const Advantages = () => {
       <Slider>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
-          <img className={style.itemImage} src={individualImg} alt="" />
+          <img
+            width="300"
+            height="300"
+            className={style.itemImage}
+            src={individualImg}
+            alt=""
+          />
 
           <article className={style.itemContent}>
-            <h4 className={style.itemTitle}>Індивідуальний підхід</h4>
+            <p className={style.itemTitle}>Індивідуальний підхід</p>
             <p className={style.itemText}>
               З першого дня роботи ми дотримуємося індивідуального підходу до
               проблеми кожного клієнта, тому що переконані, що це запорука
@@ -25,10 +31,16 @@ const Advantages = () => {
         </div>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
-          <img className={style.itemImage} src={standartImg} alt="" />
+          <img
+            width="300"
+            height="300"
+            className={style.itemImage}
+            src={standartImg}
+            alt=""
+          />
 
           <article className={style.itemContent}>
-            <h4 className={style.itemTitle}>Відповідність стандарту</h4>
+            <p className={style.itemTitle}>Відповідність стандарту</p>
             <p className={style.itemText}>
               Лікування проводиться відповідно до міжнародних рекомендацій та
               стандартів ВООЗ, стандартів діагностики та лікування Міністерства
@@ -38,10 +50,16 @@ const Advantages = () => {
         </div>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
-          <img className={style.itemImage} src={consiliumImg} alt="" />
+          <img
+            width="300"
+            height="300"
+            className={style.itemImage}
+            src={consiliumImg}
+            alt=""
+          />
 
           <article className={style.itemContent}>
-            <h4 className={style.itemTitle}>Найкращі спеціалісти</h4>
+            <p className={style.itemTitle}>Найкращі спеціалісти</p>
             <p className={style.itemText}>
               Ми приділяємо особливу увагу підбору персоналу, а також створюємо
               всі умови для їхнього професійного зростання та вдосконалення.
@@ -50,10 +68,16 @@ const Advantages = () => {
         </div>
         <div className={style.advantageItem}>
           <div className={style.itemImageLayout}></div>
-          <img className={style.itemImage} src={trustImg} alt="" />
+          <img
+            width="300"
+            height="300"
+            className={style.itemImage}
+            src={trustImg}
+            alt=""
+          />
 
           <article className={style.itemContent}>
-            <h4 className={style.itemTitle}>Нам довіряють</h4>
+            <p className={style.itemTitle}>Нам довіряють</p>
             <p className={style.itemText}>
               Нас рекомендують своїм близьким, а отже – довіряють. Понад 60%
               пацієнтів приходять до нас за рекомендацією своїх близьких, рідних

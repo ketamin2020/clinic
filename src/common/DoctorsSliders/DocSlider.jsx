@@ -32,6 +32,7 @@ const DocSlider = ({ children, adaptive }) => {
     appendDots: (dots) => <ul>{dots}</ul>,
     customPaging: (index) => (
       <button
+        aria-label="button"
         style={index === indexSlide ? { backgroundColor: " #e7a6ff" } : null}
       ></button>
     ),

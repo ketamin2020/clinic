@@ -1,35 +1,61 @@
 import { lazy } from "react";
+import {
+  mainPage,
+  directionPage,
+  doctorsPage,
+  vaccinesPage,
+  pricePage,
+  contactsPage,
+  doctorPage,
+} from "./LinksPath";
+
+const doctorsList = {
+  pravnik: "Правник Михайло Васильович",
+  koshman: "Кошман Сергій Миколайович",
+};
 
 const routes = [
   {
-    path: "/",
+    path: mainPage,
     name: "home",
     breadcrumb: "Головна",
     element: lazy(() => import("../pages/mainPage/MainPage")),
   },
   {
-    path: "/contacts",
+    path: doctorsPage,
+    name: "doctors",
+    breadcrumb: "Лікарі",
+    element: lazy(() => import("../pages/ourDoctorsPage/OurDoctorsPage")),
+  },
+  {
+    path: contactsPage,
     name: "contacts",
-    breadcrumb: "контакти",
+    breadcrumb: "Контакти",
     element: lazy(() => import("../pages/contactsPage/ContactsPage")),
   },
   {
-    path: "/price",
+    path: pricePage,
     name: "price",
-    breadcrumb: "вартість",
+    breadcrumb: "Вартість",
     element: lazy(() => import("../pages/costPage/CostPage")),
   },
   {
-    path: "/vaccines",
+    path: vaccinesPage,
     name: "vaccines",
-    breadcrumb: "вакцинація",
+    breadcrumb: "Вакцинація",
     element: lazy(() => import("../pages/vaccinesPage/VaccinesPage")),
   },
   {
-    path: "/directions",
+    path: directionPage,
     name: "directions",
-    breadcrumb: "напрями",
+    breadcrumb: "Напрями",
     element: lazy(() => import("../pages/directlyPage/DirectlyPage")),
+  },
+  {
+    path: doctorPage,
+    name: "doctor",
+    breadcrumb: ({ match }) => <span>{doctorsList[match.params.name]}</span>,
+    element: lazy(() => import("../pages/doctorPage/DoctorPage")),
   },
 ];
 

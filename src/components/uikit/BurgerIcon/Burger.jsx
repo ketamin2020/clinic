@@ -3,7 +3,7 @@ import style from "./Burger.module.css";
 
 const Burger = ({ heandler, isOpen }) => {
   return (
-    <button className={style.burgerBtn} onClick={heandler}>
+    <button aria-label="menu" className={style.burgerBtn} onClick={heandler}>
       <svg
         fill={isOpen ? "#04c4ff" : "#808080"}
         xmlns="http://www.w3.org/2000/svg"

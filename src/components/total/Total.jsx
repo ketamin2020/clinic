@@ -3,7 +3,7 @@ import { CustomContext } from "../../context/Context";
 import SectionTitle from "../../components/uikit/SectionTitle/SectionTItle";
 import Button from "../../components/uikit/Button/Button";
 import style from "./Total.module.css";
-import family from "../../images/family.png";
+import family from "../../images/family.webp";
 import document from "../../images/icons/document.svg";
 
 const Total = () => {
@@ -33,7 +33,7 @@ const Total = () => {
           />
         </div>
         <div className={style.imageWrapper}>
-          <img src={family} alt="" />
+          <img width="900" height="900" src={family} alt="" />
         </div>
       </div>
     </section>

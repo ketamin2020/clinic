@@ -3,8 +3,8 @@ import VaccineList from "../../common/VaccineList/VaccineList";
 import Accordeon from "../../components/uikit/accordeon/Accordeon";
 import SectionTitle from "../../components/uikit/SectionTitle/SectionTItle";
 import style from "./Vaccines.module.css";
-import image from "../../images/vactination.jpeg";
-import calendar from "../../images/calendarVaccines.png";
+import image from "../../images/vactination.webp";
+import calendar from "../../images/calendarVaccines.webp";
 const data = {
   text: [
     {
@@ -39,90 +39,116 @@ const data = {
     {
       title: "Інфанрікс (INFANRIX™)",
       target: ["Дифтерія", "Коклюш", "Правець"],
-      path: "infanrix",
+    },
+    {
+      title: "Інфанрікс ІПВ (INFANRIX™ IPV)",
+      target: ["Дифтерія", "Коклюш", "Правець", "Поліомієліт"],
     },
     {
       title: "Інфанрікс Гекса (INFANRIX HEXA™)",
       target: [
-        "Гемофільна інфекція типу b",
+        "Гемофільна інфекція типу B",
         "Гепатит В",
         "Дифтерія",
         "Коклюш",
-        "Полімієліт",
+        "Поліомієліт",
         "Правець",
       ],
-      path: "infanrix-hexa",
+    },
+    {
+      title: "Інфанрікс ІПВ ХІБ (INFANRIX™ IPV HIB)",
+      target: [
+        "Дифтерія",
+        "Коклюш",
+        "Правець",
+        "Поліомієліт",
+        "Гемофільна інфекція типу B",
+      ],
+      path: "infanrix",
+    },
+    {
+      title: "Ротарікс (ROTARIX®)",
+      target: ["Ротавірусна інфекція"],
     },
 
     {
       title: "Тетраксім (TETRAXIM®)",
-      target: ["Дифтерія", "Коклюш", "Полімієліт", "Правець"],
+      target: ["Дифтерія", "Коклюш", "Поліомієліт", "Правець"],
       path: "tetraxim",
     },
 
     {
       title: "Пентаксім (PENTAXIM®)",
       target: [
-        "Гемофільна інфекція типу b",
+        "Гемофільна інфекція типу B",
         "Дифтерія",
         "Коклюш",
         "Полімієліт",
         "Правець",
       ],
-      path: "pentaxim",
     },
 
     {
       title: "Гексаксім (HEXAXIM™)",
       target: [
-        "Гемофільна інфекція типу b",
+        "Гемофільна інфекція типу B",
         "Гепатит В",
         "Дифтерія",
         "Коклюш",
         "Полімієліт",
         "Правець",
       ],
-      path: "hexaxim",
+    },
+    {
+      title: "Синфлорікс (SYNFLORIX™)",
+      target: ["Нетипована гемофільна інфекція", "Пневмококова інфекція"],
+    },
+    {
+      title: "Превенар 13 (PREVENAR 13®)",
+      target: ["Пневмококова інфекція"],
+    },
+
+    {
+      title: "Німенрікс(NIMENRIX®)",
+      target: ["Менінгококова інфекція"],
+    },
+    {
+      title: "Менактра (MENACTRA®)",
+      target: ["Менінгококова інфекція"],
+    },
+    {
+      title: "Варілрикс (VARILRIX™)",
+      target: ["Вітряна віспа"],
+    },
+    {
+      title: "Хаврікс 720 (HAVRIX™ 720)",
+      target: ["Гепатит А"],
+    },
+    {
+      title: "Енджерикс-В (ENGERIX™)",
+      target: ["Гепатит В"],
     },
 
     {
       title: "Бустрікс (BOOSTRIX™)",
       target: ["Дифтерія", "Кошлюк", "Правець"],
-      path: "boostrix",
+    },
+    {
+      title: "Бустрікс Поліо (BOOSTRIX™ POLIO)",
+      target: ["Дифтерія", "Кошлюк", "Правець", "Поліомієліт"],
     },
 
     {
       title: "Пріорікс (PRIORIX™)",
       target: ["Кір", "Краснуха", "Паротит"],
-      path: "priorix",
-    },
-
-    {
-      title: "Імовакс поліо (IMOVAX POLIO®)",
-      target: ["Полімієліт"],
-      path: "imovax",
     },
     {
-      title: "Хіберікс (HIBERIX™)",
-      target: ["Гемофільна інфекція типу В"],
-      path: "hiberix",
-    },
-
-    {
-      title: "Енджерикс-В (ENGERIX™)",
-      target: ["Гепатит В"],
-      path: "engerix",
-    },
-
-    {
-      title: "Превенар 13 (PREVENAR 13®)",
-      target: ["Пневмококова інфекція"],
-      path: "prevenar",
+      title: "Ваксігрип (VAXIGRIP™)",
+      target: ["Грип"],
     },
     {
-      title: "Менактра (MENACTRA®)",
-      target: ["Менінгококова інфекція"],
-      path: "menaktra",
+      title: "ДжіСі Флю (GC FLU®)",
+      target: ["Грип"],
     },
   ],
 };

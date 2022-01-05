@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import { mainPage } from "../../router/LinksPath";
 import { CustomContext } from "../../context/Context";
 import Button from "./../uikit/Button/Button";
 import Burger from "../uikit/BurgerIcon/Burger";
@@ -18,7 +19,7 @@ const Header = () => {
           <NavLink
             onClick={isOpenMenu && setIsOpenMenu}
             className={style.logoLink}
-            to="/"
+            to={mainPage}
           ></NavLink>
         </div>
         <div className={style.contactsWrapper}>
@@ -27,7 +28,7 @@ const Header = () => {
               (068) 860-60-61
             </a>
             <a className={style.phone} href="tel:0688606062">
-              (068) 860-60-61
+              (068) 860-60-62
             </a>
           </div>
         </div>

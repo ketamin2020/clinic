@@ -17,7 +17,7 @@ const HeadContacts = () => {
           (068) 860-60-61
         </a>
         <a className={style.phone} href="tel:0688606062">
-          (068) 860-60-61
+          (068) 860-60-62
         </a>
         <a className={style.email} href="mailto:example@example.com">
           example@example.com
@@ -30,7 +30,7 @@ const HeadContacts = () => {
           target="_blank"
           className={style.socialLink}
         >
-          <img src={facebook} alt="" />
+          <img width="20" height="20" src={facebook} alt="" />
         </a>
         <a
           rel="noreferrer"
@@ -38,7 +38,7 @@ const HeadContacts = () => {
           target="_blank"
           className={style.socialLink}
         >
-          <img src={instagram} alt="" />
+          <img width="20" height="20" src={instagram} alt="" />
         </a>
       </div>
     </div>

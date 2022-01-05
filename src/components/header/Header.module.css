@@ -31,7 +31,7 @@
   width: 100%;
   max-width: 80px;
   height: 80px;
-  background-image: url("../../images/logo.png");
+  background-image: url("../../images/logo-desktop.webp");
   background-size: cover;
   vertical-align: middle;
 }
@@ -149,7 +149,7 @@
     vertical-align: middle;
   }
   .logoLink::before {
-    background-image: url("../../images/logo-desktop.png");
+    background-image: url("../../images/logo-desktop.webp");
     width: 100%;
     max-width: 100%;
   }

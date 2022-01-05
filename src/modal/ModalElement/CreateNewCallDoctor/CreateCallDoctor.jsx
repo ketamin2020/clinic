@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "../ModalElement.module.css";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo.webp";
 
 const CreateCallDoctor = () => {
   const [name, setName] = useState("");
@@ -15,6 +15,9 @@ const CreateCallDoctor = () => {
 
         <a className={style.telLink} href="tel:0688606061">
           (068) 860-60-61
+        </a>
+        <a className={style.telLink} href="tel:0688606062">
+          (068) 860-60-62
         </a>
 
         <p className={style.subTitle}>або заповнити форму</p>

@@ -10,3 +10,6 @@
 .arrov_image {
   width: 15px;
 }
+.breadcrumbWrapper:last-child a .arrov_image {
+  display: none;
+}

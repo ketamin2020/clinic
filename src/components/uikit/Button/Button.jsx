@@ -13,7 +13,13 @@ const Button = ({ text, styleName, bgColor, icons, heandler, type }) => {
         ...[styleName]
       )}
     >
-      <img className={style.btnImage} src={icons} alt="button" />
+      <img
+        width="20"
+        height="20"
+        className={style.btnImage}
+        src={icons}
+        alt="button"
+      />
       <span className={style.btnText}>{text}</span>
     </button>
   );

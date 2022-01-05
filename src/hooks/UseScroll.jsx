@@ -11,9 +11,11 @@ export const useScroll = () => {
         return setScrollY(false);
       }
     };
-    window.addEventListener("scroll", handleScrollEvent);
+    window.addEventListener("scroll", handleScrollEvent, { passive: true });
     return () => {
-      window.removeEventListener("scroll", handleScrollEvent);
+      window.removeEventListener("scroll", handleScrollEvent, {
+        passive: true,
+      });
     };
   }, [scrollY]);
 

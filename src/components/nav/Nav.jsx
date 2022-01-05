@@ -1,13 +1,15 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { CustomContext } from "../../context/Context";
+import { links, mainPage } from "../../router/LinksPath";
 import classnames from "classnames";
 import Button from "./../uikit/Button/Button";
 import document from "../../images/icons/document.svg";
 import style from "./Nav.module.css";
+import logo from "../../images/logo-desktop.webp";
 
 const Nav = () => {
-  const { isOpenMenu, onMenuHeandler, onOpenMakerHeandler, data } =
+  const { isOpenMenu, onMenuHeandler, onOpenMakerHeandler } =
     useContext(CustomContext);
 
   return (
@@ -19,7 +21,7 @@ const Nav = () => {
         )}
       >
         <ul className={style.menuList}>
-          {data.navLinks.map(({ path, text }) => (
+          {links.navLinks.map(({ path, text }) => (
             <li key={path} className={style.menuItem}>
               <NavLink
                 onClick={onMenuHeandler}
@@ -43,6 +45,15 @@ const Nav = () => {
             />
           </li>
         </ul>
+        <NavLink to={mainPage}>
+          <img
+            width="100"
+            height="50"
+            className={style.logoNavMob}
+            src={logo}
+            alt=""
+          />
+        </NavLink>
       </div>
     </nav>
   );

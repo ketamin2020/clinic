@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "../ModalElement.module.css";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logo.webp";
 
 const CreateCall = () => {
   const [phone, setPhone] = useState("");

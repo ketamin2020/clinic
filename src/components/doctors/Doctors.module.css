@@ -69,6 +69,11 @@
   transition: all 0.3s;
 }
 
+.serviceBtn {
+  width: 100%;
+  margin: 0 auto 10px;
+}
+
 @media screen and (min-width: 780px) {
   .doctorsList {
     display: flex;
