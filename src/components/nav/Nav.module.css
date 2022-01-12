@@ -106,18 +106,21 @@
   background-image: url("../../images/icons/information.svg");
 }
 .menuItem:nth-child(2) .menuItemLink::before {
-  background-image: url("../../images/icons/directions.svg");
+  background-image: url("../../images/icons/about.svg");
 }
 .menuItem:nth-child(3) .menuItemLink::before {
-  background-image: url("../../images/icons/doctors.svg");
+  background-image: url("../../images/icons/directions.svg");
 }
 .menuItem:nth-child(4) .menuItemLink::before {
-  background-image: url("../../images/icons/vaccine.svg");
+  background-image: url("../../images/icons/doctors.svg");
 }
 .menuItem:nth-child(5) .menuItemLink::before {
-  background-image: url("../../images/icons/price.svg");
+  background-image: url("../../images/icons/vaccine.svg");
 }
 .menuItem:nth-child(6) .menuItemLink::before {
+  background-image: url("../../images/icons/price.svg");
+}
+.menuItem:nth-child(7) .menuItemLink::before {
   background-image: url("../../images/icons/contacts.svg");
 }
 

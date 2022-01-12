@@ -1,6 +1,3 @@
-.section {
-  padding: 0 20px;
-}
 @media screen and (min-width: 780px) {
   .section {
     display: grid;

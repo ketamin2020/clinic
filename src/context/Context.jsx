@@ -8,6 +8,7 @@ const Context = ({ children }) => {
   const [isCallBack, setIsCallBack] = useToggle();
   const onMenuHeandler = () => {
     setIsOpenMenu((prev) => !prev);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   const onOpenHeandler = () => {
     setIsOpenModal((prev) => !prev);

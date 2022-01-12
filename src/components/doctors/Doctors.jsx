@@ -6,6 +6,7 @@ import DocSlider from "../../common/DoctorsSliders/DocSlider";
 import SectionTitle from "../uikit/SectionTitle/SectionTItle";
 import pravnik from "../../images/doctors/pravnik.webp";
 import koshman from "../../images/doctors/koshman.webp";
+import lapshina from "../../images/doctors/lapshinajpg.webp";
 import style from "./Doctors.module.css";
 import document from "../../images/icons/document.svg";
 const data = [
@@ -22,6 +23,12 @@ const data = [
     path: "koshman",
   },
   {
+    image: lapshina,
+    name: "Лапшина Ірина Олександрівна",
+    skill: "Лікар-педіатр, імунолог дитячий",
+    path: "lapshina",
+  },
+  {
     image: pravnik,
     name: "Правник Михайло Васильович",
     skill: "Лікар-педіатр",
@@ -32,6 +39,12 @@ const data = [
     name: "Кошман Сергій Миколайович",
     skill: "Лікар-педіатр",
     path: "koshman",
+  },
+  {
+    image: lapshina,
+    name: "Лапшина Ірина Олександрівна",
+    skill: "Лікар-педіатр, імунолог дитячий",
+    path: "lapshina",
   },
 ];
 
@@ -51,7 +64,7 @@ const Doctors = () => {
               <div className={style.itemImageWraper}>
                 <img
                   width="300"
-                  height="300"
+                  height="413"
                   className={style.itemImage}
                   src={image}
                   alt={name}

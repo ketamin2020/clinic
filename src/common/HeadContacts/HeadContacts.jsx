@@ -19,8 +19,8 @@ const HeadContacts = () => {
         <a className={style.phone} href="tel:0688606062">
           (068) 860-60-62
         </a>
-        <a className={style.email} href="mailto:example@example.com">
-          example@example.com
+        <a className={style.email} href="mailto:simmedcentr@gmail.com">
+          simmedcentr@gmail.com
         </a>
       </div>
       <div className={style.social}>

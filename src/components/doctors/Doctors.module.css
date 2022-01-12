@@ -42,6 +42,8 @@
 .itemImage {
   border-radius: 10px;
   transition: all 0.3s;
+  height: 413px;
+  object-fit: cover;
 }
 .doctorsItem:hover .itemImage {
   transform: scale(1.1);

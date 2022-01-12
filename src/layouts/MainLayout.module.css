@@ -22,6 +22,7 @@
 .mainContainer {
   margin-top: 110px;
   margin-bottom: 30px;
+  padding: 0 10px;
   flex-grow: 1;
 }
 .footerContainer {
@@ -62,7 +63,7 @@
     width: 100%;
     box-shadow: 0 4px 20px rgb(0 0 0 / 15%);
     background-color: white;
-    z-index: 999999999999999999999;
+    z-index: 200;
     animation: fade 0.5s;
     transition: all 0.3s;
   }

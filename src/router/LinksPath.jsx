@@ -5,10 +5,12 @@ const vaccinesPage = "/vaccines";
 const pricePage = "/price";
 const contactsPage = "/contacts";
 const doctorPage = "/doctors/:name";
+const aboutPage = "/about";
 
 const links = {
   navLinks: [
     { path: mainPage, text: "Головна" },
+    { path: aboutPage, text: "Про нас" },
     { path: directionPage, text: "Напрями" },
     { path: doctorsPage, text: "Наші лікарі" },
     { path: vaccinesPage, text: "Вакцинація" },
@@ -26,4 +28,5 @@ export {
   pricePage,
   contactsPage,
   doctorPage,
+  aboutPage,
 };

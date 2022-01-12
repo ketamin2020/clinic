@@ -7,11 +7,13 @@ import {
   pricePage,
   contactsPage,
   doctorPage,
+  aboutPage,
 } from "./LinksPath";
 
 const doctorsList = {
   pravnik: "Правник Михайло Васильович",
   koshman: "Кошман Сергій Миколайович",
+  lapshina: "Лапшина Ірина Олександрівна",
 };
 
 const routes = [
@@ -20,6 +22,12 @@ const routes = [
     name: "home",
     breadcrumb: "Головна",
     element: lazy(() => import("../pages/mainPage/MainPage")),
+  },
+  {
+    path: aboutPage,
+    name: "about",
+    breadcrumb: "Про нас",
+    element: lazy(() => import("../pages/aboutPage/AboutPage")),
   },
   {
     path: doctorsPage,

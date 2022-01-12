@@ -52,6 +52,7 @@ const DocSlider = ({ children, adaptive }) => {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          infinite: true,
         },
       },
       {
@@ -59,6 +60,7 @@ const DocSlider = ({ children, adaptive }) => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: true,
         },
       },
     ],

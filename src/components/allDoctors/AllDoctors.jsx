@@ -4,8 +4,15 @@ import SectionTitle from "../uikit/SectionTitle/SectionTItle";
 import style from "./AllDoctors.module.css";
 import pravnik from "../../images/doctors/pravnik.webp";
 import koshman from "../../images/doctors/koshman.webp";
+import lapshina from "../../images/doctors/lapshinajpg.webp";
 
 const data = [
+  {
+    image: lapshina,
+    name: "Лапшина Ірина Олександрівна",
+    skill: "Лікар-педіатр, імунолог дитячий",
+    path: "lapshina",
+  },
   {
     image: pravnik,
     name: "Правник Михайло Васильович",

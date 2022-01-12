@@ -5,7 +5,6 @@ import routes from "./router/routes";
 import CallDoctorModal from "./modal/ModalComponents/callDoctors/CallDoctors";
 import MakeAppointment from "./modal/ModalComponents/makeAppointment/MakeAppointment";
 import CallBack from "./modal/ModalComponents/callBack/CallBack";
-import "./styles/pageTransition.css";
 
 const App = () => {
   return (
