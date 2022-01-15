@@ -1,6 +1,6 @@
 import React from "react";
-import Entry from "../entry/Entry";
 import SectionTitle from "../uikit/SectionTitle/SectionTItle";
+import Total from "../total/Total";
 import Gallery from "react-grid-gallery";
 import image_1 from "../../images/clinic/image_1_1_11zon.webp";
 import image_2 from "../../images/clinic/image_2_2_11zon.webp";
@@ -9,7 +9,6 @@ import image_4 from "../../images/clinic/image_4_4_11zon.webp";
 import image_5 from "../../images/clinic/image_5_5_11zon.webp";
 import image_6 from "../../images/clinic/image_6_6_11zon.webp";
 import image_7 from "../../images/clinic/image_7_7_11zon.webp";
-import style from "./About.module.css";
 
 const About = () => {
   const IMAGES = [
@@ -60,7 +59,7 @@ const About = () => {
 
   return (
     <section>
-      <Entry />
+      <Total />
       <SectionTitle text="Наша клініка" />
       <Gallery
         images={IMAGES}

@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "../ModalElement.module.css";
 import logo from "../../../images/logo.webp";
 
 const CreateCallDoctor = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [address, setAddress] = useState("");
   return (
     <div className={style.wrapper}>
       <div className={style.innerWrapper}>

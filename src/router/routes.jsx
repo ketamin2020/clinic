@@ -65,6 +65,12 @@ const routes = [
     breadcrumb: ({ match }) => <span>{doctorsList[match.params.name]}</span>,
     element: lazy(() => import("../pages/doctorPage/DoctorPage")),
   },
+  {
+    path: "*",
+    name: "home",
+    breadcrumb: "Головна",
+    element: lazy(() => import("../pages/mainPage/MainPage")),
+  },
 ];
 
 export default routes;
