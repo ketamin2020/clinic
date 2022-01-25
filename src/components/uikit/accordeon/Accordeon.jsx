@@ -22,7 +22,11 @@ const Accordeon = ({ children, title }) => {
   };
 
   return (
-    <div className="accordion__section">
+    <div
+      data-aos="fade-right"
+      data-aos-duration="2000"
+      className="accordion__section"
+    >
       <button className={`accordion ${setActive}`} onClick={toggleAccordion}>
         <p className="accordion__title">{title}</p>
 

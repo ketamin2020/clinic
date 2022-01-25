@@ -13,8 +13,10 @@
     "react-router-dom": "^6.1.1",
     "react-scripts": "4.0.3",
     "react-slick": "^0.28.1",
+    "react-spa-prerender": "^1.0.13",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.3",
+    "typed.js": "^2.0.12",
     "use-react-router-breadcrumbs": "^3.0.1",
     "web-vitals": "^1.1.2"
   },
