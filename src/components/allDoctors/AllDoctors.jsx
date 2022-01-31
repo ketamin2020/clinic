@@ -5,7 +5,7 @@ import style from "./AllDoctors.module.css";
 import pravnik from "../../images/doctors/pravnik.webp";
 import koshman from "../../images/doctors/koshman.webp";
 import lapshina from "../../images/doctors/lapshinajpg.webp";
-
+import kulinenko from "../../images/doctors/kulinenko.webp";
 const data = [
   {
     image: lapshina,
@@ -24,6 +24,12 @@ const data = [
     name: "Кошман Сергій Миколайович",
     skill: "Лікар-педіатр",
     path: "koshman",
+  },
+  {
+    image: kulinenko,
+    name: "Куліненко Маргарита Геннадіївна",
+    skill: "Лікар-отоларинголог",
+    path: "kulinenko",
   },
 ];
 

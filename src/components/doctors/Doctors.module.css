@@ -44,6 +44,7 @@
   transition: all 0.3s;
   height: 413px;
   object-fit: cover;
+  object-position: top;
 }
 .doctorsItem:hover .itemImage {
   transform: scale(1.1);
