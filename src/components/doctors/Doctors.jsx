@@ -10,6 +10,7 @@ import lapshina from "../../images/doctors/lapshinajpg.webp";
 import style from "./Doctors.module.css";
 import document from "../../images/icons/document.svg";
 import kulinenko from "../../images/doctors/kulinenko.webp";
+import garbuz from "../../images/doctors/garbuzyk.webp";
 const data = [
   {
     image: pravnik,
@@ -36,6 +37,12 @@ const data = [
     path: "kulinenko",
   },
   {
+    image: garbuz,
+    name: "Гарбузюк Юрій Вікторович",
+    skill: "Лікар загальної практики-сімейний лікар",
+    path: "garbuzyuk",
+  },
+  {
     image: pravnik,
     name: "Правник Михайло Васильович",
     skill: "Лікар-педіатр",
@@ -58,6 +65,12 @@ const data = [
     name: "Куліненко Маргарита Геннадіївна",
     skill: "Лікар-отоларинголог",
     path: "kulinenko",
+  },
+  {
+    image: garbuz,
+    name: "Гарбузюк Юрій Вікторович",
+    skill: "Лікар загальної практики-сімейний лікар",
+    path: "garbuzyuk",
   },
 ];
 

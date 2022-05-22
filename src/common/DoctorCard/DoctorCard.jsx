@@ -13,7 +13,7 @@ const DoctorCard = ({ image, name, skill, path }) => {
           height="300"
           className={style.image}
           src={image}
-          alt="doctor"
+          alt={name}
         />
         <NavLink className={style.link} to={`/doctors/${path}`}>
           <img
