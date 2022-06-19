@@ -7,6 +7,7 @@ import koshman from "../../images/doctors/koshman.webp";
 import lapshina from "../../images/doctors/lapshinajpg.webp";
 import kulinenko from "../../images/doctors/kulinenko.webp";
 import garbuz from "../../images/doctors/garbuzyk.webp";
+import kuharuk from "../../images/doctors/kuharuk.webp";
 const data = [
   {
     image: lapshina,
@@ -37,6 +38,12 @@ const data = [
     name: "Гарбузюк Юрій Вікторович",
     skill: " Лікар загальної практики-сімейний лікар",
     path: "garbuzyuk",
+  },
+  {
+    image: kuharuk,
+    name: "Кухарук Андрій Сергійович",
+    skill: "Лікар ортопед-травматолог",
+    path: "kuharuk",
   },
 ];
 

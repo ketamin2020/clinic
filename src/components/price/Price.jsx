@@ -43,7 +43,7 @@ const data = {
     { title: "Інфанрікс ІПВ (INFANRIX™ IPV)", cost: "1200 грн" },
     { title: "Інфанрікс (INFANRIX™)", cost: "1000 грн" },
     { title: "Інфанрікс ІПВ ХІБ (INFANRIX™ IPV HIB)", cost: "1600 грн" },
-    { title: "Ротарікс (ROTARIX™)", cost: "1100 грн" },
+    { title: "Ротарікс (ROTARIX™)", cost: "1000 грн" },
     { title: "Тетраксім (TETRAXIM®)", cost: "1100 грн" },
     { title: "Пентаксім (PENTAXIM®)", cost: "1500 грн" },
     { title: "Гексаксім (HEXAXIM™)", cost: "1800 грн" },

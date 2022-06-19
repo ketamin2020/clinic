@@ -16,6 +16,7 @@ const doctorsList = {
   lapshina: "Лапшина Ірина Олександрівна",
   kulinenko: "Куліненко Маргарита Геннадіївна",
   garbuzyuk: "Гарбузюк Юрій Вікторович",
+  kuharuk: "Кухарук Андрій Сергійович",
 };
 
 const routes = [
