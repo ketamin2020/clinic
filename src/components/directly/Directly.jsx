@@ -16,6 +16,7 @@ import declaration from "../../images/icons/declaration.svg";
 import calldoctor from "../../images/icons/calldoctor.svg";
 import massage from "../../images/icons/massage.svg";
 import ultrasound from "../../images/icons/ultrasound.svg";
+import paping from "../../images/icons/tape.svg";
 const direct = [
   {
     img: reference,
@@ -77,15 +78,20 @@ const direct = [
     title: "Хірургія",
     text: "Діагностика хірургічної патології: апендицит, грижі та ін. Малі хірургічні втручання, обробка ран.",
   },
-  {
-    img: ultrasound,
-    title: "УЗД діагностика",
-    text: "Всі види ультразвукового дослідження для дорослих та дітей",
-  },
+  // {
+  //   img: ultrasound,
+  //   title: "УЗД діагностика",
+  //   text: "Всі види ультразвукового дослідження для дорослих та дітей",
+  // },
   {
     img: massage,
     title: "Масаж",
     text: "Всі види масажів для дітей та дорослих",
+  },
+  {
+    img: paping,
+    title: "Кінезіотейпування",
+    text: "М'язово-фасціальний та коригуючий кінезіотейпінг",
   },
 ];
 

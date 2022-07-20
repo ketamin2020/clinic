@@ -44,6 +44,12 @@ const data = [
     path: "garbuzyuk",
   },
   {
+    image: kuharuk,
+    name: "Кухарук Андрій Сергійович",
+    skill: "Лікар ортопед-травматолог",
+    path: "kuharuk",
+  },
+  {
     image: pravnik,
     name: "Правник Михайло Васильович",
     skill: "Лікар-педіатр",

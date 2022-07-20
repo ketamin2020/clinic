@@ -166,9 +166,9 @@ const Price = () => {
       <Accordeon title="+ Вакцинація">
         <PriceList items={data.vactination} />
       </Accordeon>
-      <Accordeon title="+ Діагностика">
+      {/* <Accordeon title="+ Діагностика">
         <PriceList items={data.diagnistics} />
-      </Accordeon>
+      </Accordeon> */}
       <Accordeon title="+ Масаж">
         <PriceList items={data.manual} />
       </Accordeon>

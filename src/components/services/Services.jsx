@@ -8,6 +8,8 @@ import treatAdult from "../../images/services/treatAdult.webp";
 import treatChild from "../../images/services/treatChild.webp";
 import urgentCare from "../../images/services/urgentCare.webp";
 import vactination from "../../images/services/vactination.webp";
+import kinezio from "../../images/services/kinezio.jpeg";
+import massage from "../../images/services/massage.jpeg";
 import { directionPage } from "../../router/LinksPath";
 
 const Services = () => {
@@ -132,6 +134,42 @@ const Services = () => {
               <p className={style.contentHeading}>
                 Надаємо першу медичну допомогу за всіма напрямками
               </p>
+              <LinkButton path={directionPage} text="Детальніше..." />
+            </div>
+          </div>
+        </li>
+        <li className={style.cardItem}>
+          <div className={style.itemBgWrapper}>
+            <img
+              width="200"
+              height="200"
+              className={style.itemBgImg}
+              src={massage}
+              alt=""
+            />
+          </div>
+          <div className={style.itemContent}>
+            <p className={style.itemContentText}>Масаж</p>
+            <div className={style.itemContentTextHidden}>
+              <p className={style.contentHeading}>Всі види масажу</p>
+              <LinkButton path={directionPage} text="Детальніше..." />
+            </div>
+          </div>
+        </li>
+        <li className={style.cardItem}>
+          <div className={style.itemBgWrapper}>
+            <img
+              width="200"
+              height="200"
+              className={style.itemBgImg}
+              src={kinezio}
+              alt=""
+            />
+          </div>
+          <div className={style.itemContent}>
+            <p className={style.itemContentText}>Кінезіотейпування</p>
+            <div className={style.itemContentTextHidden}>
+              <p className={style.contentHeading}>Всі види тейпування</p>
               <LinkButton path={directionPage} text="Детальніше..." />
             </div>
           </div>
