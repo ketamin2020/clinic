@@ -5,16 +5,16 @@ import SectionTitle from "../../components/uikit/SectionTitle/SectionTItle";
 import PriceList from "../../common/PriceList/PriceList";
 const data = {
   consultation: [
-    { title: "Консультація педіатра", cost: "450 грн" },
+    { title: "Консультація педіатра", cost: "500 грн" },
     {
       title: "Консультація педіатра із укладанням декларації",
-      cost: "450 грн",
+      cost: "500 грн",
     },
     { title: "Повторна консультація педіатра", cost: "400 грн" },
-    { title: "Консультація сімейного лікаря", cost: "450 грн" },
+    { title: "Консультація сімейного лікаря", cost: "500 грн" },
     {
       title: "Консультація сімейного лікаря із укладанням декларації",
-      cost: "450 грн",
+      cost: "500 грн",
     },
     { title: "Повторна консультація сімейного лікаря", cost: "400 грн" },
     { title: "Консультація  хірурга", cost: "500 грн" },
@@ -39,23 +39,23 @@ const data = {
     },
   ],
   vactination: [
-    { title: "Інфанрікс Гекса (INFANRIX HEXA™)", cost: "1900 грн" },
-    { title: "Інфанрікс ІПВ (INFANRIX™ IPV)", cost: "1200 грн" },
-    { title: "Інфанрікс (INFANRIX™)", cost: "1000 грн" },
-    { title: "Інфанрікс ІПВ ХІБ (INFANRIX™ IPV HIB)", cost: "1600 грн" },
-    { title: "Ротарікс (ROTARIX™)", cost: "1000 грн" },
-    { title: "Тетраксім (TETRAXIM®)", cost: "1100 грн" },
-    { title: "Пентаксім (PENTAXIM®)", cost: "1500 грн" },
-    { title: "Гексаксім (HEXAXIM™)", cost: "1800 грн" },
-    { title: "Синфлорікс (SYNFLORIX™)", cost: "1650 грн" },
-    { title: "Превенар 13 (PREVENAR 13®)", cost: "2500 грн" },
-    { title: "Німенрікс (NIMENRIX®)", cost: "1800 грн" },
+    { title: "Інфанрікс Гекса (INFANRIX HEXA™)", cost: "2200 грн" },
+    { title: "Інфанрікс ІПВ (INFANRIX™ IPV)", cost: "1300 грн" },
+    { title: "Інфанрікс (INFANRIX™)", cost: "1200 грн" },
+    { title: "Інфанрікс ІПВ ХІБ (INFANRIX™ IPV HIB)", cost: "1700 грн" },
+    { title: "Ротарікс (ROTARIX™)", cost: "1200 грн" },
+    { title: "Тетраксім (TETRAXIM®)", cost: "1200 грн" },
+    { title: "Пентаксім (PENTAXIM®)", cost: "1600 грн" },
+    { title: "Гексаксім (HEXAXIM™)", cost: "1950 грн" },
+    { title: "Синфлорікс (SYNFLORIX™)", cost: "1900 грн" },
+    { title: "Превенар 13 (PREVENAR 13®)", cost: "3100 грн" },
+    { title: "Німенрікс (NIMENRIX®)", cost: "2100 грн" },
     { title: "Менактра (MENACTRA®)", cost: "1800 грн" },
     { title: "Варілрикс(VARILRIX™)", cost: "1500 грн" },
-    { title: "Хаврікс 720 (HAVRIX™ 720)", cost: "850 грн" },
+    { title: "Хаврікс 720 (HAVRIX™ 720)", cost: "900 грн" },
     { title: "Енджерикс-В(ENGERIX™)", cost: "650 грн" },
-    { title: "Бустрікс Поліо (BOOSTRIX™ POLIO)", cost: "1200 грн" },
-    { title: "Бустрікс (BOOSTRIX™)", cost: "950 грн" },
+    { title: "Бустрікс Поліо (BOOSTRIX™ POLIO)", cost: "1300 грн" },
+    { title: "Бустрікс (BOOSTRIX™)", cost: "1000 грн" },
     { title: "Пріорікс (PRIORIX™)", cost: "750 грн" },
     { title: "ДжіСі Флю (GC FLU®)", cost: "600 грн" },
     { title: "Ваксігрип (VAXIGRIP™)", cost: "650 грн" },
@@ -151,6 +151,99 @@ const data = {
     { title: "Стоун масаж загальний - 90 хв. ", cost: "900 грн" },
     { title: "Стоун масаж спина - 45 хв. ", cost: "550 грн" },
   ],
+  surgion: [
+    { title: "Консультаці хірурга ", cost: "600 грн" },
+    { title: "Перев'язка ", cost: "250 грн" },
+    { title: "Знаття швів (1шт) ", cost: "70 грн" },
+    { title: " Кефалогематома", cost: "900 грн" },
+    { title: "Підрізання вуздечки ", cost: "1000 грн" },
+    { title: "ПХО ", cost: "800 грн" },
+  ],
+  lor: [
+    { title: " Консультація ЛОР", cost: "600 грн" },
+    { title: "Промиваання пробок вуха (1 вухо) ", cost: "200 грн" },
+    { title: "Промивання мигдалин (Бетадин + NaCl 0.9%) ", cost: "400 грн" },
+    { title: "Постановка турунди в ніс (1 носовий) ", cost: "150 грн" },
+    { title: " Постановка турунди в вухо (гнійний отит)", cost: "150 грн" },
+    { title: "Видалення стороннього тіла з вуха  ", cost: "550-1500 грн" },
+    { title: "Видалення стороннього тіла з носа ", cost: "550-1500 грн" },
+  ],
+  ginecolog: [
+    {
+      title: "Первинна консультація лікаря акушера-гінеколога ",
+      cost: "600 грн",
+    },
+    { title: "Консультація дитячого гінеколога ", cost: "600 грн" },
+    { title: "Повторна консультація ", cost: "500 грн" },
+    {
+      title:
+        "Лікування запальних захворювань зовнішніх статевих шляхів у дівчаток ",
+      cost: "300 грн",
+    },
+    { title: "Лікування сінехій у дівчаток ", cost: "600-1000 грн" },
+
+    { title: " Експрес - тест на вагітність (струминний)", cost: "150 грн" },
+    { title: "Експрес - тест на вагітність (смужковий) ", cost: "150 грн" },
+    {
+      title: "Видалення стороннього тіла піхви (1-ша категорія складності) ",
+      cost: "450 грн",
+    },
+    {
+      title: "Видалення стороннього тіла піхви (2-ша категорія складності) ",
+      cost: "550 грн",
+    },
+    {
+      title: "Діагностика підтікання навколоплідних вод (без вартості тесту) ",
+      cost: "300 грн",
+    },
+    {
+      title:
+        "Медикаментозне лікування ерозії шийки матки  (без вартості препарату)",
+      cost: "950 грн",
+    },
+    { title: "Введення ВМК (без вартості ВМК) ", cost: "600 грн" },
+    { title: "Введення ВМК (Мірена - без вартості ВМК) ", cost: "750 грн" },
+
+    { title: "Видалення ВМК ", cost: "500 грн" },
+    { title: "Лікувальний тампон (з медикаментами) ", cost: "100 грн" },
+    { title: "Лікування лактостазу", cost: "500 грн" },
+    { title: "Спринцювання піхви ", cost: "150 грн" },
+    {
+      title:
+        "Інсталяція лікарських засобів в уретру/цервікальний канал (без вартості препарату) ",
+      cost: "300 грн",
+    },
+  ],
+  driving: [
+    { title: "Виїзна консультація по місцю (в межах ЖК ММ)", cost: "550 грн" },
+    { title: "Виїзна консультація за межами ЖК ММ", cost: "600 грн" },
+    { title: "Виїзна консультація по с.Крюківщина", cost: "700-750 грн" },
+    { title: "Виїзна консультація за містом", cost: "від 800 грн" },
+  ],
+  laboratoria: [
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+    { title: "", cost: "" },
+  ],
 };
 
 const Price = () => {
@@ -166,9 +259,18 @@ const Price = () => {
       <Accordeon title="+ Вакцинація">
         <PriceList items={data.vactination} />
       </Accordeon>
-      {/* <Accordeon title="+ Діагностика">
-        <PriceList items={data.diagnistics} />
-      </Accordeon> */}
+      <Accordeon title="+ Хірургічні послуги">
+        <PriceList items={data.surgion} />
+      </Accordeon>
+      <Accordeon title="+ ЛОР послуги">
+        <PriceList items={data.lor} />
+      </Accordeon>
+      <Accordeon title="+ Гінекологічні послуги">
+        <PriceList items={data.ginecolog} />
+      </Accordeon>
+      <Accordeon title="+ Виїзні консультації лікарів">
+        <PriceList items={data.driving} />
+      </Accordeon>
       <Accordeon title="+ Масаж">
         <PriceList items={data.manual} />
       </Accordeon>
