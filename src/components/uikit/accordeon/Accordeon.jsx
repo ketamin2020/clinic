@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./style.css";
 import Chevron from "./Chevron";
 
-const Accordeon = ({ children, title }) => {
+const Accordeon = ({ children, title, parent }) => {
   const [setActive, setActiveState] = useState("");
   const [setHeight, setHeightState] = useState("0px");
   const [setRotate, setRotateState] = useState("accordion__icon");
@@ -12,6 +12,8 @@ const Accordeon = ({ children, title }) => {
     setHeightState(
       setActive === "active_accordeon"
         ? "0px"
+        : parent
+        ? "100%"
         : `${content.current.scrollHeight}px`
     );
     setRotateState(

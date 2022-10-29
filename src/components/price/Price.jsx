@@ -12,65 +12,80 @@ const Price = () => {
       <Accordeon title=" + Консультації">
         <PriceList items={data.consultation} />
       </Accordeon>
-      <Accordeon title=" + Лабораторія">
-        <Accordeon title=" Тиреоїдна панель">
+      <Accordeon parent={true} title=" + Лабораторія">
+        <Accordeon title=" - Тиреоїдна панель">
           <PriceList items={data.laboratoria.tirpanel} />
         </Accordeon>
-        <Accordeon title=" Репродуктивна панель">
+        <Accordeon title=" - Репродуктивна панель">
           <PriceList items={data.laboratoria.reprod} />
         </Accordeon>
-        <Accordeon title=" Пренатальної діагностика">
+        <Accordeon title=" - Пренатальної діагностика">
           <PriceList items={data.laboratoria.prenatal} />
         </Accordeon>
-        <Accordeon title=" Онкологічна  панель">
+        <Accordeon title=" - Онкологічна  панель">
           <PriceList items={data.laboratoria.onko} />
         </Accordeon>
-        <Accordeon title=" Гіпофізарні-наднирникові показники">
+        <Accordeon title=" - Гіпофізарні-наднирникові показники">
           <PriceList items={data.laboratoria.gipofiz} />
         </Accordeon>
-        <Accordeon title="Фактори росту">
+        <Accordeon title=" - Фактори росту">
           <PriceList items={data.laboratoria.rost} />
         </Accordeon>
-        <Accordeon title="Панель остеопорозу">
+        <Accordeon title=" - Панель остеопорозу">
           <PriceList items={data.laboratoria.osteo} />
         </Accordeon>
-        <Accordeon title="Панель цукрового діабету">
+        <Accordeon title=" - Панель цукрового діабету">
           <PriceList items={data.laboratoria.diabet} />
         </Accordeon>
-        <Accordeon title="Кардіоревматоїдна панель">
+        <Accordeon title=" - Кардіоревматоїдна панель">
           <PriceList items={data.laboratoria.cardio} />
         </Accordeon>
-        <Accordeon title="Гематологічна панель">
+        <Accordeon title=" - Гематологічна панель">
           <PriceList items={data.laboratoria.gem} />
         </Accordeon>
-        <Accordeon title="Сеча">
+        <Accordeon title=" - Біохімічна панель">
+          <PriceList items={data.laboratoria.bx} />
+        </Accordeon>
+        <Accordeon title=" - Дослідження сечі">
           <PriceList items={data.laboratoria.urine} />
         </Accordeon>
-        <Accordeon title="Цитологічні дослідження">
+        <Accordeon title=" - Панель контролю анемії">
+          <PriceList items={data.laboratoria.anemia} />
+        </Accordeon>
+        <Accordeon title=" - Цитологічні дослідження">
           <PriceList items={data.laboratoria.cit} />
         </Accordeon>
-        <Accordeon title="Діагностика калу">
+        <Accordeon title=" - Діагностика калу">
           <PriceList items={data.laboratoria.kal} />
         </Accordeon>
-        <Accordeon title="Діагностика TORCH-інфекцій">
+        <Accordeon title=" - Діагностика TORCH-інфекцій">
           <PriceList items={data.laboratoria.torch} />
         </Accordeon>
-        <Accordeon title="Інші інфекції">
+        <Accordeon title=" - Гепатити та ВІЛ">
+          <PriceList items={data.laboratoria.gep} />
+        </Accordeon>
+        <Accordeon title=" - Інші інфекції">
           <PriceList items={data.laboratoria.other} />
         </Accordeon>
-        <Accordeon title="Гельмінти">
+        <Accordeon title=" - Гельмінти">
           <PriceList items={data.laboratoria.gelm} />
         </Accordeon>
-        <Accordeon title="Алергопанель">
+        <Accordeon title=" - Алергопанель">
           <PriceList items={data.laboratoria.alerg} />
         </Accordeon>
-        <Accordeon title="Бактеріологічні дослідження">
+        <Accordeon title=" - Бактеріологічні дослідження">
           <PriceList items={data.laboratoria.bac} />
         </Accordeon>
-        <Accordeon title="Генетичні дослідження">
+        <Accordeon title=" - Генетичні дослідження">
           <PriceList items={data.laboratoria.gen} />
         </Accordeon>
-        <Accordeon title="Пакети">
+        <Accordeon title=" - Імунологічна панель">
+          <PriceList items={data.laboratoria.imun} />
+        </Accordeon>
+        <Accordeon title=" - Панель аутоімунології">
+          <PriceList items={data.laboratoria.autoimun} />
+        </Accordeon>
+        <Accordeon title=" - Пакети">
           <PriceList items={data.laboratoria.pakets} />
         </Accordeon>
       </Accordeon>
