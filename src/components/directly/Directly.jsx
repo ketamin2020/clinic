@@ -16,6 +16,9 @@ import declaration from "../../images/icons/declaration.svg";
 import calldoctor from "../../images/icons/calldoctor.svg";
 import massage from "../../images/icons/massage.svg";
 import ultrasound from "../../images/icons/ultrasound.svg";
+import dermatology from "../../images/icons/dermatology.svg";
+import gynecologist from "../../images/icons/gynecologist.svg";
+import endocrynology from "../../images/icons/endocrynology.svg";
 import paping from "../../images/icons/tape.svg";
 const direct = [
   {
@@ -78,11 +81,11 @@ const direct = [
     title: "Хірургія",
     text: "Діагностика хірургічної патології: апендицит, грижі та ін. Малі хірургічні втручання, обробка ран.",
   },
-  // {
-  //   img: ultrasound,
-  //   title: "УЗД діагностика",
-  //   text: "Всі види ультразвукового дослідження для дорослих та дітей",
-  // },
+  {
+    img: ultrasound,
+    title: "УЗД діагностика",
+    text: "Всі види ультразвукового дослідження для дорослих та дітей",
+  },
   {
     img: massage,
     title: "Масаж",
@@ -92,6 +95,21 @@ const direct = [
     img: paping,
     title: "Кінезіотейпування",
     text: "М'язово-фасціальний та коригуючий кінезіотейпінг",
+  },
+  {
+    img: dermatology,
+    title: "Дерматологія",
+    text: "Консультація, аналізи, та лікування.",
+  },
+  {
+    img: endocrynology,
+    title: "Ендокринологія",
+    text: "Консультація, аналізи, та лікування.",
+  },
+  {
+    img: gynecologist,
+    title: "Гінекологія",
+    text: "Консультація, аналізи, та лікування.",
   },
 ];
 

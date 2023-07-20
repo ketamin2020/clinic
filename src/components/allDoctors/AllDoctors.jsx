@@ -27,12 +27,12 @@ const data = [
     skill: "Лікар-педіатр",
     path: "koshman",
   },
-  {
-    image: kulinenko,
-    name: "Куліненко Маргарита Геннадіївна",
-    skill: "Лікар-отоларинголог",
-    path: "kulinenko",
-  },
+  // {
+  //   image: kulinenko,
+  //   name: "Куліненко Маргарита Геннадіївна",
+  //   skill: "Лікар-отоларинголог",
+  //   path: "kulinenko",
+  // },
   {
     image: garbuz,
     name: "Гарбузюк Юрій Вікторович",
