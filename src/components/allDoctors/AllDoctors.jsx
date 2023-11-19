@@ -5,9 +5,11 @@ import style from "./AllDoctors.module.css";
 import pravnik from "../../images/doctors/pravnik.webp";
 import koshman from "../../images/doctors/koshman.webp";
 import lapshina from "../../images/doctors/lapshinajpg.webp";
-import kulinenko from "../../images/doctors/kulinenko.webp";
+// import kulinenko from "../../images/doctors/kulinenko.webp";
 import garbuz from "../../images/doctors/garbuzyk.webp";
 import kuharuk from "../../images/doctors/kuharuk.webp";
+import leschenko from "../../images/doctors/leschenko.jpg";
+import ilchishin from "../../images/doctors/ilchishin.jpg";
 const data = [
   {
     image: lapshina,
@@ -44,6 +46,18 @@ const data = [
     name: "Кухарук Андрій Сергійович",
     skill: "Лікар ортопед-травматолог",
     path: "kuharuk",
+  },
+  {
+    image: leschenko,
+    name: "Лещенко  Владислав Романович",
+    skill: "Лікар загальної практики-сімейний лікар",
+    path: "leschenko",
+  },
+  {
+    image: ilchishin,
+    name: "Ільчишин Василь Миколайович",
+    skill: "Лікар уролог",
+    path: "ilchishin",
   },
 ];
 

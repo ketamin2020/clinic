@@ -12,6 +12,9 @@ import document from "../../images/icons/document.svg";
 import kulinenko from "../../images/doctors/kulinenko.webp";
 import garbuz from "../../images/doctors/garbuzyk.webp";
 import kuharuk from "../../images/doctors/kuharuk.webp";
+import leschenko from "../../images/doctors/leschenko.jpg";
+import ilchishin from "../../images/doctors/ilchishin.jpg";
+
 const data = [
   {
     image: pravnik,
@@ -50,6 +53,12 @@ const data = [
     path: "kuharuk",
   },
   {
+    image: ilchishin,
+    name: "Ільчишин Василь Миколайович",
+    skill: "Лікар уролог",
+    path: "ilchishin",
+  },
+  {
     image: pravnik,
     name: "Правник Михайло Васильович",
     skill: "Лікар-педіатр",
@@ -79,11 +88,24 @@ const data = [
     skill: "Лікар загальної практики-сімейний лікар",
     path: "garbuzyuk",
   },
+
   {
     image: kuharuk,
     name: "Кухарук Андрій Сергійович",
     skill: "Лікар ортопед-травматолог",
     path: "kuharuk",
+  },
+  {
+    image: leschenko,
+    name: "Лещенко  Владислав Романович",
+    skill: "Лікар загальної практики-сімейний лікар",
+    path: "leschenko",
+  },
+  {
+    image: ilchishin,
+    name: "Ільчишин Василь Миколайович",
+    skill: "Лікар уролог",
+    path: "ilchishin",
   },
 ];
 
