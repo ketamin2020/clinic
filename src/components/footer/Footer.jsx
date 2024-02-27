@@ -4,7 +4,8 @@ import { NavLink } from "react-router-dom";
 import { links, mainPage } from "../../router/LinksPath";
 import Button from "../../components/uikit/Button/Button";
 import style from "../footer/Footer.module.css";
-import footerLogo from "../../images/logo-desktop.webp";
+// import footerLogo from "../../images/logo-desktop.webp";
+import footerLogo from "../../images/logo.png";
 import document from "../../images/icons/document.svg";
 import HeadContacts from "../../common/HeadContacts/HeadContacts";
 

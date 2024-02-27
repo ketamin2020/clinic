@@ -2,14 +2,16 @@ import React from "react";
 import DoctorCard from "../../common/DoctorCard/DoctorCard";
 import SectionTitle from "../uikit/SectionTitle/SectionTItle";
 import style from "./AllDoctors.module.css";
-import pravnik from "../../images/doctors/pravnik.webp";
-import koshman from "../../images/doctors/koshman.webp";
+
 import lapshina from "../../images/doctors/lapshinajpg.webp";
 // import kulinenko from "../../images/doctors/kulinenko.webp";
 import garbuz from "../../images/doctors/garbuzyk.webp";
 import kuharuk from "../../images/doctors/kuharuk.webp";
 import leschenko from "../../images/doctors/leschenko.jpg";
 import ilchishin from "../../images/doctors/ilchishin.jpg";
+import pravdiva from "../../images/doctors/ginekolog.jpg";
+import lor from "../../images/doctors/lor_kodl.jpg";
+
 const data = [
   {
     image: lapshina,
@@ -17,24 +19,7 @@ const data = [
     skill: "Лікар-педіатр, імунолог дитячий",
     path: "lapshina",
   },
-  {
-    image: pravnik,
-    name: "Правник Михайло Васильович",
-    skill: "Лікар-педіатр",
-    path: "pravnik",
-  },
-  {
-    image: koshman,
-    name: "Кошман Сергій Миколайович",
-    skill: "Лікар-педіатр",
-    path: "koshman",
-  },
-  // {
-  //   image: kulinenko,
-  //   name: "Куліненко Маргарита Геннадіївна",
-  //   skill: "Лікар-отоларинголог",
-  //   path: "kulinenko",
-  // },
+
   {
     image: garbuz,
     name: "Гарбузюк Юрій Вікторович",
@@ -58,6 +43,18 @@ const data = [
     name: "Ільчишин Василь Миколайович",
     skill: "Лікар уролог",
     path: "ilchishin",
+  },
+  {
+    image: pravdiva,
+    name: "Правдива Галина Олександрівна",
+    skill: "Лікар гінеколог",
+    path: "pravdiva",
+  },
+  {
+    image: lor,
+    name: "",
+    skill: "Лікар-отоларинголог,сурдолог",
+    path: "lor",
   },
 ];
 

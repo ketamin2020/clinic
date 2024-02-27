@@ -14,20 +14,10 @@ import garbuz from "../../images/doctors/garbuzyk.webp";
 import kuharuk from "../../images/doctors/kuharuk.webp";
 import leschenko from "../../images/doctors/leschenko.jpg";
 import ilchishin from "../../images/doctors/ilchishin.jpg";
+import pravdiva from "../../images/doctors/ginekolog.jpg";
+import lor from "../../images/doctors/lor_kodl.jpg";
 
 const data = [
-  {
-    image: pravnik,
-    name: "Правник Михайло Васильович",
-    skill: "Лікар-педіатр",
-    path: "pravnik",
-  },
-  {
-    image: koshman,
-    name: "Кошман Сергій Миколайович",
-    skill: "Лікар-педіатр",
-    path: "koshman",
-  },
   {
     image: lapshina,
     name: "Лапшина Ірина Олександрівна",
@@ -58,23 +48,24 @@ const data = [
     skill: "Лікар уролог",
     path: "ilchishin",
   },
-  {
-    image: pravnik,
-    name: "Правник Михайло Васильович",
-    skill: "Лікар-педіатр",
-    path: "pravnik",
-  },
-  {
-    image: koshman,
-    name: "Кошман Сергій Миколайович",
-    skill: "Лікар-педіатр",
-    path: "koshman",
-  },
+
   {
     image: lapshina,
     name: "Лапшина Ірина Олександрівна",
     skill: "Лікар-педіатр, імунолог дитячий",
     path: "lapshina",
+  },
+  {
+    image: pravdiva,
+    name: "Правдива Галина Олександрівна",
+    skill: "Лікар-гінеколог",
+    path: "pravdiva",
+  },
+  {
+    image: lor,
+    name: "Оторалинголог-сурдолог",
+    skill: "Оторалинголог-сурдолог",
+    path: "lor",
   },
   // {
   //   image: kulinenko,
@@ -106,6 +97,18 @@ const data = [
     name: "Ільчишин Василь Миколайович",
     skill: "Лікар уролог",
     path: "ilchishin",
+  },
+  {
+    image: pravdiva,
+    name: "Правдива Галина Олександрівна",
+    skill: "Лікар-гінеколог",
+    path: "pravdiva",
+  },
+  {
+    image: lor,
+    name: "Оторалинголог-сурдолог",
+    skill: "Оторалинголог-сурдолог",
+    path: "lor",
   },
 ];
 

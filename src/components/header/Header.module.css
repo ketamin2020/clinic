@@ -24,16 +24,19 @@
 .logoLink {
   display: flex;
   align-items: center;
+  width: 200px;
 }
 .logoLink::before {
   content: "";
   display: inline-block;
   width: 100%;
-  max-width: 80px;
+  width: 130px;
   height: 80px;
-  background-image: url("../../images/logo-desktop.webp");
+  /* background-image: url("../../images/logo-desktop.webp"); */
+  background-image: url("../../images/logo.png");
   background-size: cover;
   vertical-align: middle;
+  background-position: center;
 }
 .contactsWrapper,
 .times {
@@ -149,8 +152,11 @@
     vertical-align: middle;
   }
   .logoLink::before {
-    background-image: url("../../images/logo-desktop.webp");
+    /* background-image: url("../../images/logo-desktop.webp"); */
+    background-image: url("../../images/logo.png");
+    background-size: cover;
+    max-width: 150px;
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
   }
 }
