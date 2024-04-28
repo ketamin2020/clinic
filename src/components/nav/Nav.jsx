@@ -6,7 +6,7 @@ import classnames from "classnames";
 import Button from "./../uikit/Button/Button";
 import document from "../../images/icons/document.svg";
 import style from "./Nav.module.css";
-import logo from "../../images/logo-desktop.webp";
+import logo from "../../images/logo.png";
 
 const Nav = () => {
   const { isOpenMenu, onMenuHeandler, onOpenMakerHeandler } =

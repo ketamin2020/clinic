@@ -20,6 +20,7 @@ import dermatology from "../../images/icons/dermatology.svg";
 import gynecologist from "../../images/icons/gynecologist.svg";
 import endocrynology from "../../images/icons/endocrynology.svg";
 import paping from "../../images/icons/tape.svg";
+import cosmetolog from "../../images/icons/cosmetolog.svg";
 const direct = [
   {
     img: reference,
@@ -110,6 +111,11 @@ const direct = [
     img: gynecologist,
     title: "Гінекологія",
     text: "Консультація, аналізи, та лікування.",
+  },
+  {
+    img: cosmetolog,
+    title: "Косметологія",
+    text: "Весь спектр косметологічних послуг",
   },
 ];
 

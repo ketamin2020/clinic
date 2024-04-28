@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SimMedCenter",
+  "name": "SimMedCenter",
   "icons": [
     {
-      "src": "./logo-desktop.ico",
+      "src": "./logo-desktop.png",
       "sizes": "64x64",
       "type": "image/x-icon"
     }

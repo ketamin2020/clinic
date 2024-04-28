@@ -113,6 +113,9 @@ const Price = () => {
       <Accordeon title="+ Подолог">
         <PriceList items={data.podolog} />
       </Accordeon>
+      <Accordeon title="+ Косметолог">
+        <PriceList items={data.cosmetolog} />
+      </Accordeon>
     </section>
   );
 };

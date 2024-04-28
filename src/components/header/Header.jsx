@@ -24,11 +24,11 @@ const Header = () => {
         </div>
         <div className={style.contactsWrapper}>
           <div className={style.phones}>
-            <a className={style.phone} href="tel:0688606061">
-              (068) 860-60-61
+            <a className={style.phone} href="tel:0937936858">
+              (093)-793-68-58
             </a>
-            <a className={style.phone} href="tel:0688606062">
-              (068) 860-60-62
+            <a className={style.phone} href="tel:0667553212">
+              (066)-755-32-12
             </a>
           </div>
         </div>
