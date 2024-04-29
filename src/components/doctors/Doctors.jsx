@@ -30,12 +30,12 @@ const data = [
     skill: "Лікар-отоларинголог",
     path: "kulinenko",
   },
-  {
-    image: garbuz,
-    name: "Гарбузюк Юрій Вікторович",
-    skill: "Лікар загальної практики-сімейний лікар",
-    path: "garbuzyuk",
-  },
+  // {
+  //   image: garbuz,
+  //   name: "Гарбузюк Юрій Вікторович",
+  //   skill: "Лікар загальної практики-сімейний лікар",
+  //   path: "garbuzyuk",
+  // },
   {
     image: kuharuk,
     name: "Кухарук Андрій Сергійович",
@@ -73,12 +73,12 @@ const data = [
   //   skill: "Лікар-отоларинголог",
   //   path: "kulinenko",
   // },
-  {
-    image: garbuz,
-    name: "Гарбузюк Юрій Вікторович",
-    skill: "Лікар загальної практики-сімейний лікар",
-    path: "garbuzyuk",
-  },
+  // {
+  //   image: garbuz,
+  //   name: "Гарбузюк Юрій Вікторович",
+  //   skill: "Лікар загальної практики-сімейний лікар",
+  //   path: "garbuzyuk",
+  // },
 
   {
     image: kuharuk,
@@ -86,12 +86,12 @@ const data = [
     skill: "Лікар ортопед-травматолог",
     path: "kuharuk",
   },
-  {
-    image: leschenko,
-    name: "Лещенко  Владислав Романович",
-    skill: "Лікар загальної практики-сімейний лікар",
-    path: "leschenko",
-  },
+  // {
+  //   image: leschenko,
+  //   name: "Лещенко  Владислав Романович",
+  //   skill: "Лікар загальної практики-сімейний лікар",
+  //   path: "leschenko",
+  // },
   {
     image: ilchishin,
     name: "Ільчишин Василь Миколайович",

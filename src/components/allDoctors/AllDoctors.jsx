@@ -20,24 +20,24 @@ const data = [
     path: "lapshina",
   },
 
-  {
-    image: garbuz,
-    name: "Гарбузюк Юрій Вікторович",
-    skill: " Лікар загальної практики-сімейний лікар",
-    path: "garbuzyuk",
-  },
+  // {
+  //   image: garbuz,
+  //   name: "Гарбузюк Юрій Вікторович",
+  //   skill: " Лікар загальної практики-сімейний лікар",
+  //   path: "garbuzyuk",
+  // },
   {
     image: kuharuk,
     name: "Кухарук Андрій Сергійович",
     skill: "Лікар ортопед-травматолог",
     path: "kuharuk",
   },
-  {
-    image: leschenko,
-    name: "Лещенко  Владислав Романович",
-    skill: "Лікар загальної практики-сімейний лікар",
-    path: "leschenko",
-  },
+  // {
+  //   image: leschenko,
+  //   name: "Лещенко  Владислав Романович",
+  //   skill: "Лікар загальної практики-сімейний лікар",
+  //   path: "leschenko",
+  // },
   {
     image: ilchishin,
     name: "Ільчишин Василь Миколайович",
